@@ -257,7 +257,7 @@ $gutter: 4%;
     width: $width;
   }
 }
-// $bp-xl (960px - 1200px) Larg Desktop
+// $bp-xl (up 1200px) Larg Desktop
 @media only screen and (min-width: $bp-xl) {
   .col-xl {
     width: $width;

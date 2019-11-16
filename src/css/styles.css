@@ -528,3 +528,19 @@ template {
     float: none;
     display: block;
     text-align: left; } }
+
+.pink {
+  background-color: pink;
+  height: 200px; }
+
+.orange {
+  background-color: orange;
+  height: 200px; }
+
+.yellow {
+  background-color: yellow;
+  height: 200px; }
+
+.red {
+  background-color: red;
+  height: 200px; }
