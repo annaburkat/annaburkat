@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Carla, Conor\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[CAlex, Anna, Carla, Conor",
-  "license": "ISC"
+  "author": "Alex, Anna, Carla, Conor",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "font-awesome": "^4.7.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "i": "^0.3.6",
+    "jquery": "^1.9.1",
+    "node-sass": "^4.13.0",
+    "npm": "^6.13.0",
+    "popper.js": "^1.16.0"
+  }
 }
