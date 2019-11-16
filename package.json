@@ -1,0 +1,11 @@
+{
+  "name": "webdesign",
+  "version": "1.0.0",
+  "description": "Project for Web Design course. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carla, Conor\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[CAlex, Anna, Carla, Conor",
+  "license": "ISC"
+}
