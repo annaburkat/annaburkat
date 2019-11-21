@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./forms.css">
+</head>
+<body>
+  <form action="http://localhost:8000/comments"
+  method="POST"
+  class="card"
+  id="comment-form"
+  enctype="application/x-www-form-urlencoded"
+  >
+Age: <br>
+<input type="number" name="age"><br>
+  Full Name:<br>
+  <input type="text" name="full_name"><br>
+  Email: <br>
+  <input type="email" name="email"><br>
+  Comment:<br>
+  <input type="textarea" name="comment" placeholder="Enter your message here"><br>
+  Accept Terms:<br>
+  <input type="checkbox" name="agree"><br>
+Student Name:<br>
+<input type="hidden" name="student_name"><br>
+
+</form>  
+
+</body>
+</html>
