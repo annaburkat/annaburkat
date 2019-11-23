@@ -12,16 +12,16 @@ $gutter: 4%;
   margin-right: auto;
 
   @media only screen and (min-width: $bp-sm) {
-    width: 85%;
+    width: 90%;
   }
   @media only screen and (min-width: $bp-md) {
-    width: 80%;
+    width: 90%;
   }
   @media only screen and (min-width: $bp-lg) {
-    width: 75%;
+    width: 85%;
   }
   @media only screen and (min-width: $bp-xl) {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -95,7 +95,7 @@ $gutter: 4%;
   width: $width;
 }
 
-// $bk-sm (540px - 768px)
+// $bk-sm (540px)
 @media only screen and (min-width: $bp-sm) {
   .col-sm {
     width: $width;
@@ -149,6 +149,7 @@ $gutter: 4%;
     width: $width;
   }
 }
+
 // $bp-md (540px - 768px) Tablet
 @media only screen and (min-width: $bp-md) {
   .col-md {
@@ -203,6 +204,7 @@ $gutter: 4%;
     width: $width;
   }
 }
+
 // $bp-lg (960px - 1200px) Small Desktop
 @media only screen and (min-width: $bp-lg) {
   .col-lg {

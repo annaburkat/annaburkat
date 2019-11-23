@@ -304,6 +304,7 @@ template {
   display: none; }
 
 body {
+<<<<<<< HEAD
   font-family: 'Karla', sans-serif; }
 
 h1,
@@ -313,6 +314,15 @@ h4,
 h5,
 h6 {
   font-family: 'Rock Salt', cursive; }
+=======
+  font-family: 'Courier New', Courier, monospace; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+button {
+  background-color: blue; }
+>>>>>>> 340cce4fdc005a602b7452539764097dd3691fe9
 
 .container {
   width: 90%;
@@ -320,16 +330,16 @@ h6 {
   margin-right: auto; }
   @media only screen and (min-width: 540px) {
     .container {
-      width: 85%; } }
+      width: 90%; } }
   @media only screen and (min-width: 768px) {
     .container {
-      width: 80%; } }
+      width: 90%; } }
   @media only screen and (min-width: 960px) {
     .container {
-      width: 75%; } }
+      width: 85%; } }
   @media only screen and (min-width: 1200px) {
     .container {
-      width: 70%; } }
+      width: 80%; } }
 
 .row {
   position: relative;
@@ -503,16 +513,16 @@ h6 {
   margin-right: auto; }
   @media only screen and (min-width: 540px) {
     .container {
-      width: 85%; } }
+      width: 90%; } }
   @media only screen and (min-width: 768px) {
     .container {
-      width: 80%; } }
+      width: 90%; } }
   @media only screen and (min-width: 960px) {
     .container {
-      width: 75%; } }
+      width: 85%; } }
   @media only screen and (min-width: 1200px) {
     .container {
-      width: 70%; } }
+      width: 80%; } }
 
 .row {
   position: relative;
@@ -734,6 +744,7 @@ h6 {
     .navbar__link {
       margin-right: 20px; } }
 
+<<<<<<< HEAD
 .homeSection {
   height: 100vh; }
 
@@ -759,3 +770,10 @@ h1 {
 
 .hero__img {
   max-width: 60%; }
+=======
+.blog__text {
+  color: #000;
+  font-size: 14px; }
+  .blog__text--green {
+    color: blue; }
+>>>>>>> 340cce4fdc005a602b7452539764097dd3691fe9
