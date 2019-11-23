@@ -1,39 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <title>YouAreWhatYouEat</title>
-  </head>
-  <body>
-    <navbar>
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#">Lifestyle</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <title>YouAreWhatYouEat</title>
+</head>
+
+<body>
+
+  <navbar>
+    <div class="js-navbar navbar">
+      <div class="navbar__header">
+        <a href="#home" class="navbar__logo">LOGO</a>
+        <span href="javascript:void(0);" class="navbar__button" onclick="myFunction()">
           <i class="fa fa-bars"></i>
-        </a>
+        </span>
       </div>
-    </navbar>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-3-xl red"></div>
-          <div class="col-12 col-3-xl pink"></div>
-          <div class="col-12 col-3-xl yellow"></div>
-          <div class="col-12 col-3-xl orange"></div>
-          
-        </div>
+
+      <div class="navbar__list">
+        <a href="#recipes" class="navbar__link">Recipes</a>
+        <a href="#blog" class="navbar__link">Blog</a>
+        <a href="#calculator" class="navbar__link">Calculator</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#lifestyle" class="navbar__link">Lifestyle</a>
       </div>
-    </section>
-    <footer>
-      Footer
-    </footer>
-  </body>
+    </div>
+  </navbar>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-3-xl"></div>
+        <div class="col-12 col-3-xl"></div>
+        <div class="col-12 col-3-xl"></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    Footer
+  </footer>
+</body>
+
 </html>

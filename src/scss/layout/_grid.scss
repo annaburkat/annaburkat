@@ -203,7 +203,7 @@ $gutter: 4%;
     width: $width;
   }
 }
-// $bp-lg (768px - 960px) Small Desktop
+// $bp-lg (960px - 1200px) Small Desktop
 @media only screen and (min-width: $bp-lg) {
   .col-lg {
     width: $width;

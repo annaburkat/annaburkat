@@ -1,0 +1,67 @@
+@import './grid';
+
+.navbar {
+  background-color: #333;
+  padding: 15px;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    color: pink;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__link {
+    color: #f2f2f2;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px;
+
+    &--active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    &:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
+
+  &__button {
+    color: pink;
+  }
+}
+
+.navbar.responsive .navbar__list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+@media only screen and (min-width: $bp-sm) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__button {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__link {
+      margin-right: 20px;
+    }
+  }
+}
