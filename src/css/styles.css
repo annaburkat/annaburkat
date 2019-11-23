@@ -303,6 +303,12 @@ template {
 [hidden] {
   display: none; }
 
+body {
+  font-family: 'Courier New', Courier, monospace; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
 button {
   background-color: blue; }
 
@@ -312,16 +318,16 @@ button {
   margin-right: auto; }
   @media only screen and (min-width: 540px) {
     .container {
-      width: 85%; } }
+      width: 90%; } }
   @media only screen and (min-width: 768px) {
     .container {
-      width: 80%; } }
+      width: 90%; } }
   @media only screen and (min-width: 960px) {
     .container {
-      width: 75%; } }
+      width: 85%; } }
   @media only screen and (min-width: 1200px) {
     .container {
-      width: 70%; } }
+      width: 80%; } }
 
 .row {
   position: relative;
@@ -495,16 +501,16 @@ button {
   margin-right: auto; }
   @media only screen and (min-width: 540px) {
     .container {
-      width: 85%; } }
+      width: 90%; } }
   @media only screen and (min-width: 768px) {
     .container {
-      width: 80%; } }
+      width: 90%; } }
   @media only screen and (min-width: 960px) {
     .container {
-      width: 75%; } }
+      width: 85%; } }
   @media only screen and (min-width: 1200px) {
     .container {
-      width: 70%; } }
+      width: 80%; } }
 
 .row {
   position: relative;
@@ -714,3 +720,9 @@ button {
       flex-direction: row; }
     .navbar__link {
       margin-right: 20px; } }
+
+.blog__text {
+  color: #000;
+  font-size: 14px; }
+  .blog__text--green {
+    color: blue; }

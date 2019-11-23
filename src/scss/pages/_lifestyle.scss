@@ -1,0 +1,13 @@
+@import '../base/colours';
+
+.blog {
+    &__text{
+        color: #000;
+        font-size: 14px;
+
+        &--green {
+            color:$base-color;
+        }
+    }
+}
+
