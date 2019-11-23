@@ -1,0 +1,35 @@
+@import '../base/colours';
+
+.homeSection {
+  height: 100vh;
+}
+
+.homeSection--first {
+  background-color: $PowderBlue;
+  text-align: center;
+  padding-top: 100px;
+}
+.homeSection--second {
+  background-color: $CaribbeanGreen;
+}
+.homeSection--third {
+  background-color: $Porcelain;
+}
+.homeSection--fourth {
+  background-color: $Misteria;
+}
+
+h1 {
+  text-align: center;
+}
+
+.hero {
+  &__left {
+    background-color:	#FFC0CB
+    position: relative;
+  }
+  &__img {
+    max-width: 60%;
+    position: absolute;
+  }
+}
