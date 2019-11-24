@@ -1,12 +1,20 @@
+@import '../base/colours';
 
 .navbar {
-  background-color:#fff;
-  color: hotpink;
+background-color: #fff;
+-webkit-transition:   background-color .5s; /* For Safari 3.1 to 6.0 */
+transition:   background-color .5s;
   position: fixed;
   padding: 15px 0;
   width: 100%;
   z-index: 99999999;
   box-sizing: border-box;
+
+  &--scrolled{
+      background-color:$PowderBlue;
+      -webkit-transition:   background-color .5s; /* For Safari 3.1 to 6.0 */
+transition:   background-color .5s;
+  }
 
   &__header {
     display: flex;
@@ -25,19 +33,20 @@
   }
 
   &__link {
-    color:pink;
+    color: $font;
     text-align: left;
     text-decoration: none;
+    padding: 5px;
     font-size: 17px;
 
     &--active {
-      background-color: #4CAF50;
+      background-color: $CaribbeanGreen;
       color: white;
     }
 
     &:hover {
-      background-color: #ddd;
-      color: black;
+      background-color: $CaribbeanGreen;
+      color: white;
     }
   }
 
