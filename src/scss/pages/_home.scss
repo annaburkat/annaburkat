@@ -1,35 +1,174 @@
 @import '../base/colours';
-
-.homeSection {
-  height: 100vh;
-}
+@import '../layout/grid';
 
 .homeSection--first {
-  background-color: $PowderBlue;
-  text-align: center;
-  padding-top: 100px;
-}
-.homeSection--second {
-  background-color: $CaribbeanGreen;
-}
-.homeSection--third {
-  background-color: $Porcelain;
-}
-.homeSection--fourth {
-  background-color: $Misteria;
-}
-
-h1 {
-  text-align: center;
+  padding: 150px 0 100px;
+  overflow-x: hidden;
 }
 
 .hero {
+  &__wrapper {
+    background-color: $Porcelain;
+    min-height: 450px;
+  }
+
+  &__title {
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    color: $font;
+    font-weight: bold;
+    max-width: 80%;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.8rem;
+    background-color: $CaribbeanGreen;
+    color: #fff;
+    border: none;
+    display: block;
+    margin: 3rem 0 3rem 30%;
+
+    &:hover {
+      background-color: $Misteria;
+      cursor: pointer;
+    }
+
+  }
+
+  &__button-icon {
+    padding-left:1rem;
+  }
+
   &__left {
-    background-color:	#FFC0CB
     position: relative;
   }
+
+  &__img-wrapper {
+    max-width: 100vw;
+  }
+
   &__img {
-    max-width: 60%;
-    position: absolute;
+    max-width: 350px;
+    margin-left: 33%;
+  }
+}
+@media only screen and (min-width: $bp-sm) {
+  .hero {
+    &__title {
+      max-width: 60%;
+    }
+
+    &__button {
+      margin: 4rem auto;
+    }
+
+    &__img-wrapper {
+      max-width: none;
+    }
+
+    &__img {
+      max-width: none;
+      width: 80%;
+      margin-left: 35%;
+    }
+  }
+}
+@media only screen and (min-width: $bp-md) {
+  .hero {
+    &__title {
+      font-size: 4rem;
+    }
+
+    &__wrapper {
+      min-height: 600px;
+    }
+
+    &__main-row {
+      margin-left: 15%;
+    }
+
+    &__button {
+      margin: 6rem 0 3rem 1rem;
+    }
+
+    &__img {
+      width: 70%;
+      margin-left: -15%;
+    }
+  }
+}
+@media only screen and (min-width: $bp-lg) {
+  .hero {
+    &__title {
+      margin-left: -15%;
+    }
+
+    &__button {
+      margin: 6rem 0 3rem 1rem;
+    }
+
+    &__main-row {
+      margin-left: 10%;
+    }
+
+    &__img {
+      width: 70%;
+      margin-top: -5%;
+      margin-left: 35%;
+    }
+  }
+}
+@media only screen and (min-width: $bp-xl) {
+  .hero {
+    &__main-row {
+      margin-left:20%;
+    }
+    &__title {
+      max-width: 40%;
+      font-size: 4.5rem;
+      margin-left: -8%;
+    }
+    &__img {
+      width: 50%;
+      margin-top: -8%;
+      margin-left: 35%;
+    }
+  }
+}
+
+
+.three-block{
+  &__title {
+    text-align: center;
+    color: $font;
+  }
+  &__box{
+    &--first{
+background: linear-gradient(40deg, $PowderBlue 60%, $Porcelain 40%);
+    }
+    &--second{
+      background: linear-gradient(323deg, $PowderBlue 60%, $Porcelain 40%);
+    }
+    &--third{
+        background: linear-gradient(38deg, $PowderBlue 60%, $Porcelain 40%);
+    }
+  }
+  &__subtitle {
+    padding: 20px 0 10px 10px;
+  }
+  &__text {
+    padding: 0 15px 10px;
+  }
+
+}
+
+.gallery {
+  img {
+    max-width: 100%;
+    
   }
 }
