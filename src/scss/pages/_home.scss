@@ -1,9 +1,16 @@
 @import '../base/colours';
 @import '../layout/grid';
 
-.homeSection--first {
-  padding: 150px 0 100px;
-  overflow-x: hidden;
+.homeSection {
+  padding: 50px 0;
+
+  &--first {
+    padding: 150px 0 50px;
+    overflow-x: hidden;
+  }
+  &--third {
+    padding-bottom: 100px;
+  }
 }
 
 .hero {
@@ -36,11 +43,10 @@
       background-color: $Misteria;
       cursor: pointer;
     }
-
   }
 
   &__button-icon {
-    padding-left:1rem;
+    padding-left: 1rem;
   }
 
   &__left {
@@ -125,13 +131,15 @@
 @media only screen and (min-width: $bp-xl) {
   .hero {
     &__main-row {
-      margin-left:20%;
+      margin-left: 20%;
     }
+
     &__title {
       max-width: 40%;
       font-size: 4.5rem;
       margin-left: -8%;
     }
+
     &__img {
       width: 50%;
       margin-top: -8%;
@@ -140,35 +148,163 @@
   }
 }
 
-
-.three-block{
+.three-block {
   &__title {
     text-align: center;
     color: $font;
   }
-  &__box{
-    &--first{
-background: linear-gradient(40deg, $PowderBlue 60%, $Porcelain 40%);
+
+  &__box {
+    &--first {
+      background: linear-gradient(40deg, $PowderBlue 60%, $Porcelain 40%);
     }
-    &--second{
+
+    &--second {
       background: linear-gradient(323deg, $PowderBlue 60%, $Porcelain 40%);
     }
-    &--third{
-        background: linear-gradient(38deg, $PowderBlue 60%, $Porcelain 40%);
+
+    &--third {
+      background: linear-gradient(38deg, $PowderBlue 60%, $Porcelain 40%);
     }
   }
+
   &__subtitle {
     padding: 20px 0 10px 10px;
   }
+
   &__text {
     padding: 0 15px 10px;
   }
-
 }
 
-.gallery {
-  img {
+.intro {
+  &__link {
+    cursor: pointer;
+
+    :hover {
+      background-color: $Porcelain;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+
+  &__diets {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__image {
+    max-width: 80%;
+    display: block;
+    margin: 1rem auto 2rem;
+  }
+
+  &__image-text {
+    text-align: center;
+  }
+
+  &__diet {
+    padding: 1rem;
+  }
+
+  &__diet-icon {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__diet-title {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: $bp-sm) {
+  .intro {
+    &__image-wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__image {
+      max-width: 40%;
+    }
+
+    &__image-text-wrapper {
+      position: relative;
+      width: 50%;
+    }
+
+    &__image-text {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+@media only screen and (min-width: $bp-md) {
+  .intro {
+    &__image-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-flow: row-reverse;
+    }
+  }
+}
+@media only screen and (min-width: $bp-lg) {
+  .intro {
     max-width: 100%;
-    
+    margin: 0 auto;
+
+    &__block {
+      text-align: center;
+    }
+
+    &__image-wrapper {
+      display: block;
+      margin-top: 50%;
+    }
+
+    &__text {
+      text-align: center;
+      max-width: 60%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__image-text-wrapper {
+      width: 100%;
+    }
+
+    &__image-text {
+      position: relative;
+    }
+
+    &__text {
+      max-width: 80%;
+    }
+
+    &__image {
+      max-width: 100%;
+      margin: 2rem 0;
+    }
+  }
+}
+@media only screen and (min-width: $bp-xl) {
+  .intro {
+    &__image-wrapper {
+      display: block;
+      margin-top: 0;
+    }
+
+    &__text {
+      max-width: 50%;
+    }
   }
 }
