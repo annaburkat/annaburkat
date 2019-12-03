@@ -1,0 +1,49 @@
+@import '../base/colours';
+@import '../layout/grid';
+
+.footer {
+  background-color: $PowderBlue;
+  padding: 1.5rem;
+  font-size: 15px;
+  text-align: center;
+
+  &__link {
+    color: $font;
+    text-decoration: none;
+    display: block;
+  }
+
+  &__contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  &__social-media {
+    i {
+      margin-left: 1rem;
+    }
+  }
+
+  &__contact {
+    margin-bottom: 2rem;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+@media only screen and (min-width: $bp-md) {
+  .footer {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: $bp-xl) {
+  .footer {
+    &__container {
+      max-width: 80%;
+    }
+  }
+}

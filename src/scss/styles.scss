@@ -1,26 +1,22 @@
-@import 'normalize';
-@import 'grid';
-@import 'navbar';
-@import 'buttons';
-@import 'colours';
+@import './base/colours';
+@import './base/normalize';
+@import './base/typography';
+@import './base/general';
+
+@import './components/buttons';
+@import './components/slider';
+
+@import './layout/footer';
+@import './layout/forms';
+@import './layout/grid';
+@import './layout/header';
+@import './layout/navbar';
 
 
-
-.pink {
-    background-color: pink;
-    height: 200px;
-}
-
-.orange {
-    background-color: orange;
-    height: 200px;
-}
-
-.yellow {
-    background-color: yellow;
-    height: 200px;
-}
-.red {
-    background-color: red;
-    height: 200px;
-}
+@import './pages/about';
+@import './pages/contact';
+@import './pages/home';
+@import './pages/recipe';
+@import './pages/recipes';
+@import './pages/lifestyle';
+@import './pages/tdee';
