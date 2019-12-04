@@ -1013,6 +1013,9 @@ body {
   .about__image {
     width: 70%; } }
 
+.about p {
+  justify-content: center; }
+
 .container {
   width: 90%;
   margin-left: auto;
