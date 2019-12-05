@@ -26,11 +26,12 @@ h3{
 .slideshow-container {
     max-width: 1000px;
     position: center;
-    margin: 0 auto;
+    margin: auto;
   }
   .mySlides {
     display: none;
     position: center;
+    overflow: hidden;
   }
   .prev {
     cursor: pointer;

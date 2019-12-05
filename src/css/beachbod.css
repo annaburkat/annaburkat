@@ -11,13 +11,14 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 .point1 {
-    padding-left: 8%;
-    padding-right: 20%;
+    padding-left: 10%;
 }
 .weights {
     float: right;
     padding-left: 10%;
+    padding-right:10%;
     padding-top: 4%;
+    padding-bottom: 3%;
     border-radius: 8px 8px 8px 8px;
 }
 .BeachBod {
@@ -27,26 +28,28 @@ color: white;
 }
 
 .point2 {
-    padding-left: 6%;
+    padding-left: 8%;
+    padding-right: 10%;
     padding-top:2%;
 }
 
 .increasing_reps {
     float: left;
-    padding-top:3%;
-    padding-right: 8%;
+    padding-top:8%;
+    padding-right: 10%;
     border-radius: 8px;
 }
 .point3 {
-    padding-left: 6%;
+    padding-left: 10%;
     padding-top: 5%;
 }
 
 .improve_technique {
     float: right;
-    padding-right: 8%;
+    padding-right: 10%;
     padding-top: 4%;
     padding-left: 8%;
+    padding-bottom: 3%;
     border-radius: 20px;
 }
 .point4 {
