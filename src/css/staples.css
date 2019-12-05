@@ -1,0 +1,50 @@
+section{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.navbar{
+    padding-right: 3%;
+}
+.KitchenStaples{
+    padding-left: 10%;
+    padding-right: 10%;
+    border-style:groove;
+    border-radius: 5px;
+    border-left-width: 10%;
+    border-color: #0EC99D;
+}
+h1{
+    text-align: center;
+}
+.PantryStaples{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.pantryimage{
+    float: right;
+    border-radius: 5px;
+    max-width: 60%;
+}
+
+.garlicimage{
+    float: left;
+    border-radius: 10px;
+    padding-right: 10%
+}
+
+.FreshProduce{
+    padding-left: 20%;
+    padding-right:20%;
+    padding-bottom:10%
+}
+.Gadgets{
+    padding-left:25%;
+    padding-right:30%;
+    padding-bottom: 5%;
+}
+.kitchenware{
+    float: right;
+}
+.end{
+    text-align: center;
+}
