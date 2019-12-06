@@ -1,4 +1,4 @@
-.calculator {
+.contact {
     padding: 150px 0;
 
   &__title {
@@ -12,23 +12,10 @@
   }
 }
 
-// .form {
-//     &__input, &__submit, select, &__textarea{
-//     width: 100%; 
-//         padding: 10px; 
-//         border: 1px solid rgb(105, 128, 128); 
-//         border-radius: 10px; 
-//         box-sizing: border-box; 
-//         margin-top: 10px; 
-//         margin-bottom: 16px; 
-//         resize: vertical 
-// }
-// }
-
 input[type=text], input[type=email], select, textarea {
     width: 100%; 
     padding: 10px; 
-    border: 1px solid rgb(128, 105, 115); 
+    border: 1px solid rgb(105, 128, 128); 
     border-radius: 10px; 
     box-sizing: border-box; 
     margin-top: 10px; 

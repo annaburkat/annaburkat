@@ -1016,12 +1016,12 @@ body {
 .about p {
   justify-content: center; }
 
-.contact {
+.calculator {
   padding: 150px 0; }
-  .contact__title {
+  .calculator__title {
     justify-content: center;
     text-align: center; }
-  .contact__text {
+  .calculator__text {
     justify-content: center;
     text-align: left; }
 
@@ -1054,9 +1054,12 @@ input[type=submit]:hover {
   margin-top: 100px; }
 
 #map {
-  height: 500px;
-  width: 40%;
+  height: 400px;
+  width: 60%;
   float: right; }
+
+.form {
+  float: left; }
 
 .container {
   width: 90%;
@@ -1449,3 +1452,49 @@ input[type=submit]:hover {
   font-size: 14px; }
   .blog__text--green {
     color: #9562b6; }
+
+.contact {
+  padding: 150px 0; }
+  .contact__title {
+    justify-content: center;
+    text-align: center; }
+  .contact__text {
+    justify-content: center;
+    text-align: left; }
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #698080;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+input[type=submit] {
+  background-color: #1e28be;
+  color: white;
+  padding: 20px 36px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #45a049; }
+
+.container {
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 100px; }
+
+#map {
+  height: 400px;
+  width: 60%;
+  float: right; }
+
+.form {
+  float: left; }
+
