@@ -1,5 +1,9 @@
 @import '../base/colours';
-@import '../layout/grid'
+@import '../layout/grid';
+
+.h1{
+  text-align: center;
+}
 
 .blog {
     &__text{
@@ -11,20 +15,21 @@
         }
     }
 }
+
 @media only screen and (min-width: $bp-sm) {
     .hero {
       &__title {
         max-width: 60%;
       }
-  
+
       &__button {
         margin: 4rem auto;
       }
-  
+
       &__img-wrapper {
         max-width: none;
       }
-  
+
       &__img {
         max-width: none;
         width: 80%;
@@ -32,44 +37,47 @@
       }
     }
   }
+
   @media only screen and (min-width: $bp-md) {
     .hero {
       &__title {
         font-size: 4rem;
       }
-  
+
       &__wrapper {
         min-height: 600px;
       }
-  
+
       &__main-row {
         margin-left: 15%;
       }
-  
+
       &__button {
         margin: 6rem 0 3rem 1rem;
       }
-  
+
       &__img {
         width: 70%;
         margin-left: -15%;
       }
     }
   }
+
+
   @media only screen and (min-width: $bp-lg) {
     .hero {
       &__title {
         margin-left: -15%;
       }
-  
+
       &__button {
         margin: 6rem 0 3rem 1rem;
       }
-  
+
       &__main-row {
         margin-left: 10%;
       }
-  
+
       &__img {
         width: 70%;
         margin-top: -5%;
@@ -78,21 +86,18 @@
     }
   }
 
-  .h1{
-    text-align: center;
-  }
   @media only screen and (min-width: $bp-xl) {
     .hero {
       &__main-row {
         margin-left: 20%;
       }
-  
+
       &__title {
         max-width: 40%;
         font-size: 4.5rem;
         margin-left: -8%;
       }
-  
+
       &__img {
         width: 50%;
         margin-top: -8%;
@@ -100,4 +105,3 @@
       }
     }
   }
-  
