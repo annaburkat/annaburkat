@@ -1,7 +1,5 @@
 @import '../base/colours';
-@import '../base/general';
 @import '../layout/grid';
-@import '../components/textBox';
 
 .staples {
   margin-top: 100px;
@@ -10,70 +8,5 @@
     max-width: 80%;
     text-align: center;
     margin: 100px auto 50px;
-  }
-}
-
-.pantry {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display: block;
-
-  &__title {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-
-  &__img {
-    border-radius: 5px;
-    max-width: 90%;
-    display: block;
-    margin: 0 auto 20px;
-  }
-}
-
-@media only screen and (min-width: $bp-sm) {
-  .pantry {
-    margin-bottom: 100px;
-
-    &__title {
-      margin-bottom: 50px;
-    }
-
-    &__img {
-      border-radius: 5px;
-      max-width: 45%;
-
-      &--left {
-        float: left;
-      }
-
-      &--right {
-        float: right;
-      }
-    }
-
-    &__text {
-      max-width: 50%;
-      padding: 0;
-
-      &--right {
-        float: right;
-      }
-
-      &--left {
-        float: left;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: $bp-xl) {
-  .pantry {
-    max-width: 70%;
-    margin: 100px auto;
-
-    &__img {
-      max-width: 40%;
-    }
   }
 }

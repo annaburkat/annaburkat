@@ -1,64 +1,20 @@
-section {
-    padding-left: 4%;
-    padding-right: 4%;
-}
-h1 {
-    text-align: center;
-    color: white;
-}
-.intro {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-.point1 {
-    padding-left: 10%;
-}
-.weights {
-    float: right;
-    padding-left: 10%;
-    padding-right:10%;
-    padding-top: 4%;
-    padding-bottom: 3%;
-    border-radius: 8px 8px 8px 8px;
-}
-.BeachBod {
-background-image: url("../Images/gym.jpg");
-background-size: 100%;
-color: white;
-}
+@import '../base/colours';
+@import '../layout/grid';
 
-.point2 {
-    padding-left: 8%;
-    padding-right: 10%;
-    padding-top:2%;
-}
+.beachBod-intro {
+  background-image: url("../Images/gym.jpg");
+  background-size: 100%;
+  color: $white;
+  margin-top: 50px;
+  padding: 50px 0;
 
-.increasing_reps {
-    float: left;
-    padding-top:8%;
-    padding-right: 10%;
-    border-radius: 8px;
-}
-.point3 {
-    padding-left: 10%;
-    padding-top: 5%;
-}
+  &__title {
+    color: $white;
+  }
 
-.improve_technique {
-    float: right;
-    padding-right: 10%;
-    padding-top: 4%;
-    padding-left: 8%;
-    padding-bottom: 3%;
-    border-radius: 20px;
-}
-.point4 {
+  &__text {
     text-align: center;
-    border-style: groove;
-    border-radius: 5px;
-    border-left-width: 10%;
-    border-color: #0EC99D;
-}
-.author {
-    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }

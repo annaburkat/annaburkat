@@ -1,0 +1,11 @@
+.blog {
+  &__title {
+    color: $font;
+    text-align: center;
+  }
+
+  &__author {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}

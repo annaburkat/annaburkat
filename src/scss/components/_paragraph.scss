@@ -8,6 +8,9 @@
     &__title {
       text-align: center;
       margin-bottom: 25px;
+      &--left {
+        text-align: left;
+      }
     }
 
     &__img{
@@ -53,6 +56,9 @@
         &--left {
           float: left;
           text-align: left;
+        }
+        &--fullWidth{
+          max-width: 100%;
         }
       }
   }
