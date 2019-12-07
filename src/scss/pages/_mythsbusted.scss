@@ -1,114 +1,94 @@
-.MythsBusted{
-    padding-left: 5%;
-    padding-right:5%;
-}
-h1{
+@import '../base/colours';
+@import '../layout/grid';
+
+
+.mythbusted-article {
+  margin: 100px auto;
+
+  &__title {
     text-align: center;
+    border-style: groove;
+    border-radius: 5px;
+    border-left-width: 10%;
+    border-color: $CaribbeanGreen;
+    max-width: 70%;
+    margin: 0 auto 40px;
+    padding: 10px;
+  }
+
+  &__text {
+    max-width: 60%;
+    margin: 0 auto;
+  }
 }
 
-// h3{
-//     border-style: groove;
-//     border-radius: 5px;
-//     border-left-width: 10%;
-//     border-color: #0EC99D;
-// }
-.myth1{
-    padding-left: 20%;
-    padding-right:20%;
-}
-.myth2{
-    padding-left: 20%;
-    padding-right:20%;
-}
-.author{
-    text-align: center;
-}
-.slideshow-container {
-    max-width: 1000px;
-    position: center;
-    margin: auto;
-  }
-  .mySlides {
+.mythbusted-slider {
+  max-width: 80%;
+  margin: 0 auto 30px;
+  position: relative;
+
+  &__slide {
     display: none;
     position: center;
     overflow: hidden;
-  }
-  .mySlides:first-of-type {
-    display: block;
-  }
-  .prev {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .next {
-    cursor: pointer;
-    position: relative;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    right: 0;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
+    &:first-of-type {
+      display: block;
+    }
 
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
   }
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  .numbertext {
-    color: #f2f2f2;
+  &__counter {
+    color: $font;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    bottom: -50px;
+    right: 0;
   }
-  .dot {
+  &__dots {
+    text-align: center;
+  }
+  &__dot{
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: $Porcelain;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    &:hover{
+      background-color: $font;
+    }
+    &--active {
+      background-color: $font;
+    }
   }
-  .active, .dot:hover {
-    background-color: #717171;
+}
+
+
+.mythbusted-slider__fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes mythbusted-slider__fade {
+  from {
+    opacity: 0.4;
   }
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+
+  to {
+    opacity: 1;
   }
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+}
+
+@keyframes mythbusted-slider__fade {
+  from {
+    opacity: 0.4;
   }
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+
+  to {
+    opacity: 1;
   }
+}

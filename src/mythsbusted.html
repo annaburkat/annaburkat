@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="mythsbusted.js"></script>
   <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
@@ -36,35 +35,31 @@
       </div>
     </div>
   </navbar>
+  <br><br><br><br>
 
-  <section class="container blog">
-    <br>
-    <br>
-    <br>
-    <div class="MythsBusted">
-      <h1>Myths Busted - Fatloss Edition!</h1>
+  <section class="container blog mythbusted">
 
-      <div class="mySlides fade">
-        <div class="numbertext">1/2</div>
+    <h1 class="blog__title">Myths Busted - Fatloss Edition!</h1>
+    <div class="mythbusted-slider">
+      <div class="mythbusted-slider__slide mythbusted-slider__fade js-mythbusted-slide">
+        <div class="mythbusted-slider__counter">1/2</div>
         <img src="images\myth1.jpg" alt="Fitness" width="100%" height="auto">
       </div>
 
-      <div class="mySlides fade">
-        <div class="numbertext">2/2</div>
+      <div class="mythbusted-slider__slide mythbusted-slider__fade js-mythbusted-slide">
+        <div class="mythbusted-slider__counter">2/2</div>
         <img src="images\myth2.jpg" alt="Fitness" width="100%" height="auto">
       </div>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
+    <div class="mythbusted-slider__dots">
+      <span class="js-mythbusted__dot mythbusted-slider__dot mythbusted-slider__dot--active" onclick="currentSlide(1)"></span>
+      <span class="js-mythbusted__dot mythbusted-slider__dot" onclick="currentSlide(2)"></span>
     </div>
 
-    <div class="myth1">
-      <h3>Myth #1: Light Weight & High Reps Are Best For Fat Loss</h3>
-      <p>Much of the time, one of the first steps many people take when attempting to lose weight is to begin working out, which is great!
+    <div class="mythbusted-article">
+      <h3 class="mythbusted-article__title">Myth #1: Light Weight & High Reps Are Best For Fat Loss</h3>
+      <p class="mythbusted-article__text">Much of the time, one of the first steps many people take when attempting to lose weight is to begin working out, which is great!
         But very often, this workout includes lifting a high amount of lightweight repetitions to burn fat.
         Unfortunately, that’s not always the best route to take, especially if you’re hoping to maintain muscle and strength.
         The body is quite interesting in that it grows when it needs to and then stops when it doesn’t. In the case of muscle while dieting, this could not be any more true.
@@ -83,10 +78,10 @@
         as well as the more metabolically demanding workouts.
       </p>
     </div>
-    <br>
-    <div class="myth2">
-      <h3>Myth #2: You Need Lots Of Cardio For Weight Loss</h3>
-      <p>
+
+    <div class="mythbusted-article">
+      <h3 class="mythbusted-article__title">Myth #2: You Need Lots Of Cardio For Weight Loss</h3>
+      <p class="mythbusted-article__text">
         If high rep workouts are often the first step of many, then jumping on the treadmill to get some cardio in is the second. While cardio does provide advantages for burning fat,
         many people have a misconception about what that actually means. Studies show that even though during your workout you may see an increase of calorie burn specifically from fat,
         the body actually reduces energy expenditure later on in the day to compensate. In essence, the body does what it can to reduce the impact of your calorie deficit.
@@ -98,7 +93,6 @@
       </p>
     </div>
 
-    <br>
     <div class="blog__author">
       <p>Alex Ardelean - PT</p>
     </div>
