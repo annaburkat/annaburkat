@@ -339,6 +339,26 @@ h6 {
 body {
   min-height: 100vh; }
 
+.form__input, .form__textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #806973;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+.form__submit {
+  background-color: #1e28be;
+  color: white;
+  padding: 20px 36px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+  .form__submit:hover {
+    background-color: #45a049; }
+
 .container {
   width: 90%;
   margin-left: auto;
@@ -1013,53 +1033,16 @@ body {
   .about__image {
     width: 70%; } }
 
-.about p {
-  justify-content: center; }
-
-.calculator {
-  padding: 150px 0; }
-  .calculator__title {
-    justify-content: center;
-    text-align: center; }
-  .calculator__text {
-    justify-content: center;
-    text-align: left; }
-
-input[type=text], input[type=email], select, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #698080;
-  border-radius: 10px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  margin-bottom: 16px;
-  resize: vertical; }
-
-input[type=submit] {
-  background-color: #1e28be;
-  color: white;
-  padding: 20px 36px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; }
-
-input[type=submit]:hover {
-  background-color: #45a049; }
-
-.container {
-  justify-content: center;
+.contact__container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
   margin-top: 100px; }
 
-#map {
-  height: 400px;
-  width: 60%;
-  float: right; }
-
-.form {
-  float: left; }
+.contact__map {
+  height: 600px;
+  width: 90%;
+  margin: 100px auto; }
 
 .container {
   width: 90%;
@@ -1453,48 +1436,13 @@ input[type=submit]:hover {
   .blog__text--green {
     color: #9562b6; }
 
-.contact {
+.calculator {
   padding: 150px 0; }
-  .contact__title {
-    justify-content: center;
+  .calculator__container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px; }
+  .calculator__title {
     text-align: center; }
-  .contact__text {
-    justify-content: center;
+  .calculator__text {
     text-align: left; }
-
-input[type=text], input[type=email], select, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #698080;
-  border-radius: 10px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  margin-bottom: 16px;
-  resize: vertical; }
-
-input[type=submit] {
-  background-color: #1e28be;
-  color: white;
-  padding: 20px 36px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; }
-
-input[type=submit]:hover {
-  background-color: #45a049; }
-
-.container {
-  justify-content: center;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin-top: 100px; }
-
-#map {
-  height: 400px;
-  width: 60%;
-  float: right; }
-
-.form {
-  float: left; }
-

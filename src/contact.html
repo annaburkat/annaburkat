@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="js/script.js"></script>
   <title>You are what you eat</title>
-  
+
 </head>
 
 <body>
-
   <navbar>
     <div class="js-navbar navbar">
       <div class="navbar__header">
@@ -33,8 +31,10 @@
       </div>
     </div>
   </navbar>
-  <section class="contact" id="contact-us">
-    <div class="container">
+  <br><br><br><br>
+
+  <section class="contact">
+    <div class="contact__container container">
       <div class="row">
         <div class="col col-6-md">
           <div class="contact__text">
@@ -45,22 +45,26 @@
             <form class="form" action="action_page.php">
               <label for="fname">Full Name:</label>
               <input class="form__input" type="text" id="fname" name="fullname" placeholder="Your full name">
+
               <label for="email">Email:</label>
               <input class="form__input" type="email" id="email" name="email" placeholder="Enter your email">
+
               <label for="subject">Subject:</label>
-              <textarea class="form__textarea" id="subject" name="subject" placeholder="Ask away!"
-                style="height:200px"></textarea>
+              <textarea class="form__textarea" id="subject" name="subject" placeholder="Ask away!" style="height:200px"></textarea>
+              
               <input class="form__submit" type="submit" value="Submit">
             </form>
-            <div id="map">
-            </div>
+          </div>
+        </div>
+        <div class="col col-6-md">
+          <div class="contact__map" id="map">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  
+
 
   <footer class="footer">
     <div class="container footer__container">
@@ -99,21 +103,9 @@
     </div>
   </footer>
 
-  <script>
-    function initMap() {
-      var location = { lat: 53.3491058, lng: -6.2450008 };
-      var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        center: location
-      });
-      var marker = new google.maps.Marker({
-        position: location,
-        map: map
-      })
-    }
-  </script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe42PsLaFQTDrhnjMxB03nzbYTze5f8ls&callback=initMap"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe42PsLaFQTDrhnjMxB03nzbYTze5f8ls&callback=initMap"></script>
 
 </body>
 
