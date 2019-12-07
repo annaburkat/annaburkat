@@ -3,11 +3,11 @@
 @import './base/typography';
 @import './base/general';
 
-@import './components/buttons';
-@import './components/slider';
 @import './components/blog';
-@import './components/textBox';
+@import './components/buttons';
 @import './components/paragraph';
+@import './components/slider';
+@import './components/textBox';
 
 @import './layout/footer';
 @import './layout/forms';
@@ -20,9 +20,9 @@
 @import './pages/contact';
 @import './pages/home';
 @import './pages/leaneating';
+@import './pages/lifestyle';
+@import './pages/mythsbusted';
 @import './pages/recipe';
 @import './pages/recipes';
 @import './pages/staples';
-@import './pages/lifestyle';
-@import './pages/mythsbusted';
 @import './pages/tdee';
