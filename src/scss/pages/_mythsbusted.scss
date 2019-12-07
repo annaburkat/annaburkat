@@ -1,0 +1,94 @@
+@import '../base/colours';
+@import '../layout/grid';
+
+
+.mythbusted-article {
+  margin: 100px auto;
+
+  &__title {
+    text-align: center;
+    border-style: groove;
+    border-radius: 5px;
+    border-left-width: 10%;
+    border-color: $CaribbeanGreen;
+    max-width: 70%;
+    margin: 0 auto 40px;
+    padding: 10px;
+  }
+
+  &__text {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.mythbusted-slider {
+  max-width: 80%;
+  margin: 0 auto 30px;
+  position: relative;
+
+  &__slide {
+    display: none;
+    position: center;
+    overflow: hidden;
+    &:first-of-type {
+      display: block;
+    }
+
+  }
+  &__counter {
+    color: $font;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+  }
+  &__dots {
+    text-align: center;
+  }
+  &__dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: $Porcelain;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover{
+      background-color: $font;
+    }
+    &--active {
+      background-color: $font;
+    }
+  }
+}
+
+
+.mythbusted-slider__fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes mythbusted-slider__fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mythbusted-slider__fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

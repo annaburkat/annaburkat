@@ -1,66 +1,133 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <title>Beach Bod Basics</title>
-  </head>
-  <body>
-    <navbar>
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#">Lifestyle</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/stop/stop.json">
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="./font-awesome-animation.min.css">
+  <title>Beach Bod Basics</title>
+</head>
+
+<body>
+  <navbar>
+    <div class="js-navbar navbar">
+      <div class="navbar__header">
+        <a href="#home" class="navbar__logo">LOGO</a>
+        <span href="javascript:void(0);" class="navbar__button" onclick="myFunction()">
           <i class="fa fa-bars"></i>
-        </a>
+        </span>
       </div>
-    </navbar>
-    <section>
-    <div class="BeachBod"></div>
-    <h1>Beach Bod Basics</h1>
-    <p>So today im going to keep it short and sweet and give you a few simple (but effective) facts for building that Greek God bod!
-        By following this approach you’ll not only sky rocket your metabolism but you'll also increase your resting heart rate and burn twice as many calories in a day, 
-        leading to that perfect beach bod!
-    </p>
-        <br>
-        <h3>First and Foremost:</h3>
-        <p><strong>Increase your lifting weight!</strong> You should strive to add more weight to the bar/machine/dumbells, etc.. each week.
-        I can't stress the importance of this! Even if it’s the smallest of increases, you’re still adding on more weight which will lead to progressive overload.
-        Generally, I would recommend trying to increase by 1.25-2.5kg each week on all movements that you feel comfortable to do so!</p>
-        <br>
-            <h3>Secondly..</h3>
-<p><strong>Increase your reps!</strong> You’ll be happy to hear this.. you don’t always <strong>need</strong> to increase weight! Another great way you can progress is by 
-    increasing the number of reps per set. So say for example if you’ve been going 3 sets of 10 for a while now, increase it to 3 sets of 12, and BAM!
-    You’ve applied progressive overload! Let the gains begin! The when those 3 sets of 12 get easy, that means an increase in weight needs to be made.</p>
-    <br>
-        <h3>Thirdly..</h3>
-        <p><strong>Improve technique!</strong>This is another really good form of progressive overload, especially if you want to make sure you continue using the right 
-            muscle groups and prevent injury! Your form needs to be picture perfect before you can increase weight on all movements. A good que I like to use is the last rep of 
-            a set should look exactly like the first! If that’s not the case for you then you may be going a little too heavy and there may be some ego-lifting going on! Drop the weight friend, 
-            no one is judging you! It will always be a bigger pay off to have your form correct, than to be lifting heavier weights incorrectly.</p>
-    </p>
-    <br>
-    <h3>Finally for today..</h3>
-    <p><strong>Decreased RPE (Rate of Perceived Exertion).</strong>This is a term commonly used in powerlifting. To simplify it for you it is a scale that you go by to measure 
+
+      <div class="navbar__list">
+        <a href="#recipes" class="navbar__link">Recipes</a>
+        <a href="#blog" class="navbar__link">Blog</a>
+        <a href="#calculator" class="navbar__link">Calculator</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#lifestyle" class="navbar__link">Lifestyle</a>
+      </div>
+    </div>
+  </navbar>
+  <br><br><br><br>
+
+
+  <section class="blog container">
+    <div class="beachBod-intro">
+      <div style="background-image: url('/src/Images/gym.jpg);">
+        <h1 class="beachBod-intro__title">Beach Bod Basics</h1>
+        <div class="beachBod-intro__text">
+          <p>So today im going to keep it short and sweet and give you a few simple (but effective) facts for building that Greek God bod!
+            By following this approach you’ll not only sky rocket your metabolism but you'll also increase your resting heart rate and burn twice as many calories in a day,
+            leading to that perfect beach bod!
+        </div>
+      </div>
+    </div>
+
+    <div class="paragraph clearfix">
+      <h4 class="paragraph__title">First and Foremost:</h4>
+      <img src="Images/weights.jpg" alt="weights" class="paragraph__img paragraph__img--right">
+      <div class="paragraph__text paragraph__text--left">
+        <strong>Increase your lifting weight!</strong> You should strive to add more weight to the bar/machine/dumbells, etc.. each week.
+          I can't stress the importance of this! Even if it’s the smallest of increases, you’re still adding on more weight which will lead to progressive overload.
+          Generally, I would recommend trying to increase by 1.25-2.5kg each week on all movements that you feel comfortable to do so!
+      </div>
+    </div>
+
+    <div class="paragraph clearfix">
+      <h4 class="paragraph__title">Secondly..</h4>
+      <img src="Images/increase_reps.jpg" alt="Increasing Reps" class="paragraph__img paragraph__img--left">
+      <div class="paragraph__text paragraph__text--right">
+        <strong>Increase your reps!</strong> You’ll be happy to hear this.. you don’t always <strong>need</strong> to increase weight! Another great way you can progress is by
+          increasing the number of reps per set. So say for example if you’ve been going 3 sets of 10 for a while now, increase it to 3 sets of 12, and BAM!
+          You’ve applied progressive overload! Let the gains begin! The when those 3 sets of 12 get easy, that means an increase in weight needs to be made.
+      </div>
+    </div>
+
+    <div class="paragraph clearfix">
+      <h4 class="paragraph__title">Thirdly..</h4>
+      <img src="Images/technique.jpg" alt="improving technique" class="paragraph__img paragraph__img--right">
+      <div class="paragraph__text paragraph__text--left">
+      <strong>Improve technique!</strong>This is another really good form of progressive overload, especially if you want to make sure you continue using the right
+        muscle groups and prevent injury! Your form needs to be picture perfect before you can increase weight on all movements. A good que I like to use is the last rep of
+        a set should look exactly like the first! If that’s not the case for you then you may be going a little too heavy and there may be some ego-lifting going on! Drop the weight friend,
+        no one is judging you! It will always be a bigger pay off to have your form correct, than to be lifting heavier weights incorrectly.
+      </div>
+    </div>
+
+
+    <div class="textBox">
+      <h4 class="textBox__title">Finally for today..</h4>
+      <p><strong>Decreased RPE (Rate of Perceived Exertion).</strong>This is a term commonly used in powerlifting. To simplify it for you it is a scale that you go by to measure
         how difficult a given set was. So for example, if the final rep at the end of a given set was extremely difficult, then that would be ranked 8 or 9 on the RPE scale.
-    Likewise, if it was easy it would be ranked a 5 or 6 on the RPE scale.  So if the number on the RPE scale lowers that means you’re getting stronger, which means progressive 
-    overload is being applied! WOO!
-    <br>
-    <br>
-    Always keep these 4 handy tips in mind. These combined with good eating habits will be sure to see you go from Henry to Hercules!
-    <br>
-    <br>
-    Alex Ardelean - PT
+        Likewise, if it was easy it would be ranked a 5 or 6 on the RPE scale. So if the number on the RPE scale lowers that means you’re getting stronger, which means progressive
+        overload is being applied! WOO!
+      </p>
+      <p>Always keep these 4 handy tips in mind. These combined with good eating habits will be sure to see you go from Henry to Hercules!
+      </p>
+    </div>
+
+    <div class="blog__author">Alex Ardelean - PT</div>
+
     </p>
-    <footer>
-        Footer
-      </footer>
-    </body>
-  </html>
-  
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="row">
+        <div class="col-12 col-3-md">
+          <a href="#home" class="footer__logo">LOGO</a>
+        </div>
+        <div class="col-12 col-3-md">
+          <div class="footer__list">
+            <a href="#recipes" class="footer__link">Recipes</a>
+            <a href="#blog" class="footer__link">Blog</a>
+            <a href="#calculator" class="footer__link">Calculator</a>
+          </div>
+        </div>
+        <div class="col-12 col-3-md">
+          <div class="footer__list">
+            <a href="#about" class="footer__link">About</a>
+            <a href="#lifestyle" class="footer__link">Lifestyle</a>
+            <a href="#contact" class="footer__link">Contact</a>
+          </div>
+        </div>
+        <div class="col-12 col-3-md">
+          <div class="footer__contact-wrapper">
+            <div class="footer__social-media">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-pinterest-p"></i>
+            </div>
+            <div class="footer__contact">
+              <p>5 Fitzgerald Street, Harold's Cross,</p>
+              <p>Dublin 6, D08X65 </p>
+</body>
+
+</html>

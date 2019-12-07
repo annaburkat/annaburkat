@@ -1,90 +1,179 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <title>Myths Busted - Fatloss Edition!</title>
-  </head>
-  <body>
-    <navbar>
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#">Lifestyle</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/stop/stop.json">
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="./font-awesome-animation.min.css">
+  <title>Lean Eating</title>
+</head>
+
+<body>
+  <navbar>
+    <div class="js-navbar navbar">
+      <div class="navbar__header">
+        <a href="#home" class="navbar__logo">LOGO</a>
+        <span href="javascript:void(0);" class="navbar__button" onclick="myFunction()">
           <i class="fa fa-bars"></i>
-        </a>
+        </span>
       </div>
-    </navbar>
-    <section>
-    <div class="LeanEating"></div>
-    <h1>8 New Rules of Lean Eating</h1>
-    <h2>You'd like your eating plan to work for you - to get you the results that you want without loads of complicated steps. 
-        The good news is that lean eating does not mean complicated eating...it just means eating smart!</h3>
-    <br>
-    <h3>1. Eat the RIGHT Type of Carbs</h3>
-    <p>
-    There is a confusion around which carbs have a place in a lean diet and which carbs will only make you gain weight.
-    The success of your eating plan depends a lot on which of these carbs you regularly include in your diet:
-    <ol>
-        <li>Green vegetables</li>
-        <li>Non-Green veggies - You gotta get your carrots in too!</li>
-        <li>Fruit</li>
-        <li>Whole Grains and Starches</li>
-        <li>Refined Grains</li>
-        <li>Foods with Added Sugar</li>
-    </ol>
-    The top 3 ranked carbs are where 90% of the carbs in your diet should be coming from...in order to get that lean physique that you want.
-    Immediately cut out the bottom 2 (refined grains and foods with added sugar) and on occasion include a limited amount of Whole Grains and Starches.
-    <br>
-    <h3>2. Track What You Eat</h3>
-    <p>The only way to improve upon your diet is to actually know what you're currently eating. Keep a food journal, or download a free food tracker app(my fitness pal),
-        and track the calories that you have over the course of a week. This will give you a broad look at where your low quality calories are coming from (high sugar, empty calories). 
-        Your first step will be to eliminate these fattening calories and to start replacing empty calories with nutrient-filled whole foods. 
-    </p>
-    <h3>3. Space Meals Apart</h3>
-    <p>Much has been said over the past number of decades about the importance of eating small frequent meals throughout the day. This is old, outdated science.
-        New research has proven that there's more harm than good to eating more frequently than every 4 hours. Stick with 3 meals each day, and fill in a protein-based 
+
+      <div class="navbar__list">
+        <a href="#recipes" class="navbar__link">Recipes</a>
+        <a href="#blog" class="navbar__link">Blog</a>
+        <a href="#calculator" class="navbar__link">Calculator</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#lifestyle" class="navbar__link">Lifestyle</a>
+      </div>
+    </div>
+  </navbar>
+  <br><br><br><br>
+
+
+  <section class="container blog">
+    <h1 class="blog__title">8 New Rules of Lean Eating</h1>
+
+    <div class="textBox">
+      <p>You'd like your eating plan to work for you - to get you the results that you want without loads of complicated steps.
+        The good news is that lean eating does not mean complicated eating...it just means eating smart!</p>
+    </div>
+
+    <div class="paragraph clearfix">
+      <h4 class="paragraph__title">1. Eat the RIGHT Type of Carbs</h4>
+      <img src="Images/fruitveg.jpg" alt="green fruit and veg" class="paragraph__img paragraph__img--right">
+      <div class="paragraph__text paragraph__text--left">
+        There is a confusion around which carbs have a place in a lean diet and which carbs will only make you gain weight.
+        The success of your eating plan depends a lot on which of these carbs you regularly include in your diet:
+        <ol>
+          <li>Green vegetables</li>
+          <li>Non-Green veggies - You gotta get your carrots in too!</li>
+          <li>Fruit</li>
+          <li>Whole Grains and Starches</li>
+          <li>Refined Grains</li>
+          <li>Foods with Added Sugar</li>
+        </ol>
+        The top 3 ranked carbs are where 90% of the carbs in your diet should be coming from...in order to get that lean physique that you want.
+        Immediately cut out the bottom 2 (refined grains and foods with added sugar) and on occasion include a limited amount of Whole Grains and Starches.
+      </div>
+    </div>
+
+    <div class="paragraph clearfix">
+      <h4 class="paragraph__title">2. Track What You Eat</h4>
+      <img src="Images/fitnesstracker.jpg" alt="smartwatch" class="paragraph__img paragraph__img--left">
+      <div class="paragraph__text paragraph__text--right">The only way to improve upon your diet is to actually know what you're currently eating. Keep a food journal, or download a free food tracker app(my fitness pal),
+        and track the calories that you have over the course of a week. This will give you a broad look at where your low quality calories are coming from (high sugar, empty calories).
+        Your first step will be to eliminate these fattening calories and to start replacing empty calories with nutrient-filled whole foods.
+      </div>
+    </div>
+
+    <div class="paragraph clearfix">
+      <h4 class="paragraph__title paragraph__title--left">3. Space Meals Apart</h4>
+      <p class="paragraph__text paragraph__text--fullWidth">Much has been said over the past number of decades about the importance of eating small frequent meals throughout the day. This is old, outdated science.
+        New research has proven that there's more harm than good to eating more frequently than every 4 hours. Stick with 3 meals each day, and fill in a protein-based
         snack if your meals are going to be more than 4 hours apart.
-    </p>
-    <h3>4. Never Restrict Calories to the Extreme</h3>
-    <p>There's a certain trend going on in temporarily restricting calories to the extreme. The idea that one can drop a down a size or two in just as many weeks is quite tempting.
-       I hate to be the one to burst your overambitious bubble, but extreme calorie restriction NEVER WORKS. It's terrible for your body and it is not something that is sustainable
-       (namely because you'd starve to death) all this will do is make your body completely fall off and binge. 
-       <br>
-       The key to being lean for life is to eat in a way that you can sustain forever. Eat whole foods. Eat a moderate amount of the RIGHT calories. Every day, ongoing, forever. 
-    </p>
-    <br>
-    <h3>5. Eat Veggies First</h3>
-    <p>This may go against all of your instincts, but hear this one out. When you sit down to a meal first eat all of the veggies and salad, before moving on to the main meal. 
+      </p>
+    </div>
+
+    <div class="paragraph clearfix">
+      <h4 class="paragraph__title">4. Never Restrict Calories to the Extreme</h4>
+      <img src="Images/baddiet.jpg" alt="poor diet" class="paragraph__img paragraph__img--right">
+      <div class="paragraph__text paragraph__text--left">
+        There's a certain trend going on in temporarily restricting calories to the extreme. The idea that one can drop a down a size or two in just as many weeks is quite tempting.
+        I hate to be the one to burst your overambitious bubble, but extreme calorie restriction NEVER WORKS. It's terrible for your body and it is not something that is sustainable
+        (namely because you'd starve to death) all this will do is make your body completely fall off and binge.
+        <br>
+        The key to being lean for life is to eat in a way that you can sustain forever. Eat whole foods. Eat a moderate amount of the RIGHT calories. Every day, ongoing, forever.
+      </div>
+    </div>
+
+    <div class="paragraph clearfix">
+      <h4 class="paragraph__title">5. Eat Veggies First</h4>
+      <img src="Images/veggiesfirst.jpg" alt="vegetables" class="paragraph__img paragraph__img--left">
+      <div class="paragraph__text paragraph__text--right">
+        This may go against all of your instincts, but hear this one out. When you sit down to a meal first eat all of the veggies and salad, before moving on to the main meal.
         This simple strategy helps to fill you up with lower calorie foods first, before moving on to the higher calorie items. By making this a habit you'll naturally and effortlessly consume fewer
         calories at each meal, which will add up in a big way.
-    </p>
-    <br>
-    <h3>6. Include Protein at Every Meal</h3>
-    <p>Each of your meals should be built around a healthy serving of protein. This protein could be meat (chicken breast, fish fillet, roasted turkey, lean beef etc..), or a meat substitute
+      </div>
+    </div>
+
+    <div class="paragraph clearfix">
+      <h4 class="paragraph__title">6. Include Protein at Every Meal</h4>
+      <img src="Images/proteinimage.jpg" alt="protein" class="paragraph__img paragraph__img--right">
+      <div class="paragraph__text paragraph__text--left">
+        Each of your meals should be built around a healthy serving of protein. This protein could be meat (chicken breast, fish fillet, roasted turkey, lean beef etc..), or a meat substitute
         (tofu, quorn, jackfruit, etc..) eggs, or protein powder. Having protein as the focus point of your meal is important for two reasons:
-    <ol>
-        <li>You're fueling up in a way that builds muscles rather than stores fat</li>
-        <li>By default, you're avoiding high calorie main dishes, which is what really causes most weight gain</li>
-    </ol></p>
-    <br>
-    <h3>7. Ban Liquid Calories</h3>
-    <p>Liquid calories have no place in a lean eating plan. No place at all. Anytime that you are drinking calories, it's safe to assume that you're adding inches to your waistline.
+        <ol>
+          <li>You're fueling up in a way that builds muscles rather than stores fat</li>
+          <li>By default, you're avoiding high calorie main dishes, which is what really causes most weight gain</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="paragraph clearfix">
+      <h4 class="paragraph__title">7. Ban Liquid Calories</h4>
+      <img src="Images/nofizzies.jpg" alt="Fizzy Drink" class="paragraph__img paragraph__img--left">
+      <div class="paragraph__text paragraph__text--right">
+        Liquid calories have no place in a lean eating plan. No place at all. Anytime that you are drinking calories, it's safe to assume that you're adding inches to your waistline.
         Put down the beer, just say no to the blended coffee drink, and forget about fizzy drinks. Put down the beer, just say no to the blended coffee drink, and forget about fizzy drinks.
-    </p>
-    <br>
-    <h3>8. Avoid Prepackaged Foods</h3>
-    <p>Prepackaged foods and snacks have no place in a lean eating plan. These processed foods contain numerous fattening ingredients such as refined sugar, sodium, 
-        grains, fillers and other artificial ingredients. If you are currently eating packaged foods on a daily basis, then cutting these items out will quickly translate into pounds lost. </p>
-    <p>Alex Ardelean - PT</p>
-    <footer>
-            Footer
-          </footer>
-        </body>
-      </html>
+      </div>
+    </div>
+
+    <div class="paragraph">
+      <h4 class="paragraph__title paragraph__title--left">8. Avoid Prepackaged Foods</h4>
+      <div class="paragraph__text paragraph__text--fullWidth">Prepackaged foods and snacks have no place in a lean eating plan. These processed foods contain numerous fattening ingredients such as refined sugar, sodium,
+        grains, fillers and other artificial ingredients. If you are currently eating packaged foods on a daily basis, then cutting these items out will quickly translate into pounds lost. </div>
+    </div>
+
+    <div class="blog__author">
+      <p>Alex Ardelean - PT</p>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="row">
+        <div class="col-12 col-3-md">
+          <a href="#home" class="footer__logo">LOGO</a>
+        </div>
+        <div class="col-12 col-3-md">
+          <div class="footer__list">
+            <a href="#recipes" class="footer__link">Recipes</a>
+            <a href="#blog" class="footer__link">Blog</a>
+            <a href="#calculator" class="footer__link">Calculator</a>
+          </div>
+        </div>
+        <div class="col-12 col-3-md">
+          <div class="footer__list">
+            <a href="#about" class="footer__link">About</a>
+            <a href="#lifestyle" class="footer__link">Lifestyle</a>
+            <a href="#contact" class="footer__link">Contact</a>
+          </div>
+        </div>
+        <div class="col-12 col-3-md">
+          <div class="footer__contact-wrapper">
+            <div class="footer__social-media">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-pinterest-p"></i>
+            </div>
+            <div class="footer__contact">
+              <p>5 Fitzgerald Street, Harold's Cross,</p>
+              <p>Dublin 6, D08X65 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
