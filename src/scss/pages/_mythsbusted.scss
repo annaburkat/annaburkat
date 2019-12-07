@@ -33,6 +33,9 @@ h3{
     position: center;
     overflow: hidden;
   }
+  .mySlides:first-of-type {
+    display: block;
+  }
   .prev {
     cursor: pointer;
     position: absolute;

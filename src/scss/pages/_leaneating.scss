@@ -1,3 +1,8 @@
+@import '../base/colours';
+@import '../base/general';
+@import '../layout/grid';
+// @import '../components/paragrpah';
+
 section {
   padding-left: 5%;
   padding-right: 5%;
@@ -5,15 +10,7 @@ section {
 
 h1 {
   text-align: center;
-}
-
-.intro {
-  text-align: center;
-  border-style: groove;
-  border-radius: 5px;
-  border-left-width: 10%;
-  border-color: #0EC99D;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $font;
 }
 
 .rule_1 {
