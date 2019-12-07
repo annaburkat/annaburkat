@@ -1,0 +1,140 @@
+
+/* ==========| Recepies |========== */
+.section_cont{
+    margin-top: 100px;
+    
+}
+.rece_page_cont{
+    background-color: white;
+    height: 100vh;
+    padding-top: 100px;
+
+}
+
+.recepies_page{
+    background-color: #EBF1F0;
+    height: 100%;
+    
+}
+.cont_recepies{
+    /*height: 90vh;*/
+    width: 100%;
+    
+    padding-left: 50px;
+}
+
+.cont_recepies a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #616770;   
+}
+
+.recepies_wrap{
+    height: 100%;
+}
+
+.rece_tit h3{
+    margin-left: 0;
+}
+
+.rece_tit h2{
+    margin-left: 0;
+}
+
+.menu_rece_img{
+    max-height: 150px;
+}
+
+.cont_img {
+    width:150px;
+    height:150px;
+    overflow:hidden;
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+}
+
+.cont_img:hover{
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+    
+}
+
+.cont_img img{
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+}
+
+.cont_img:hover img {
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+}
+
+.recepies_wrap{
+    display: flex;
+    align-content: space-around;
+}
+
+.recepies_img img{
+    max-width: 400px;
+}
+
+.enlace{
+    display: none;
+    margin-top: 100px;
+}
+/* ---------- | go back button | ----------  */
+
+.go_up {
+	display:inline-block;
+    width: 25px;
+    height: 25px;
+	padding:20px;
+	background:#f9b4ec;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+    border: 0px solid white;
+    border-radius: 5px;
+    z-index: 999;
+}
+.go_up:hover{
+    background-color: #fac4f0;
+    
+}
+
+.go_up:before{
+	content:'^';
+	font-size:1.5em;
+	position:absolute;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+    margin-left: 5px;
+
+}
+
+.go_up:hover:before{
+	transform: rotate(360deg);
+  
+}
+
+@media only screen and (max-width: 540px) {
+    .recepies_img{
+        display: none;
+    }
+    .menu_rece_img{
+        display: none;
+    }
+}
