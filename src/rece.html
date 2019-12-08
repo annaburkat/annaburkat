@@ -14,13 +14,30 @@
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/stop/stop.json">
   <script type="text/javascript" src="js/script.js"></script>
   <link rel="stylesheet" href="./font-awesome-animation.min.css">
-  <title>Recepie 1</title>
+  <title>You are what you eat</title>
 </head>
 
 <body>
-    
-    <!--  ----------------- fixed navbar ---------------------------- -->
- <!--  <navbar>
+    <navbar>
+        <div class="fix_navbar">
+            <div class="navbar__header">
+                <a href="#home" class="navbar__logo">LOGO</a>
+            </div>
+
+            <div class="navbar__list">
+                <a href="#recipes" class="navbar__link">Recipes</a>
+                <a href="#blog" class="navbar__link">Blog</a>
+                <a href="#calculator" class="navbar__link">Calculator</a>
+                <a href="#contact" class="navbar__link">Contact</a>
+                <a href="#about" class="navbar__link">About</a>
+                <a href="#lifestyle" class="navbar__link">Lifestyle</a>
+            </div>
+            
+        </div>
+        
+    </navbar>
+
+  <!-- <navbar class="nav">
     <div class="js-navbar navbar">
       <div class="navbar__header">
         <a href="#home" class="navbar__logo">LOGO</a>
@@ -38,57 +55,114 @@
         <a href="#lifestyle" class="navbar__link">Lifestyle</a>
       </div>
     </div>
-  </navbar>-->
+  </navbar> -->
+    
+    
+    
+    <!-- <section class="homeSection homeSection--first hero">-->
+        <div class="cont_rece">
+            
+            
+            <div class="row bar">
+                <div class="step_bar"> 
+                    <div clas="step_link">
+                        <a href="#tit">Mushroom-Quinoa Burger</a>
+                    </div>
+                    <div clas="step_link">
+                        <a href="#s1">step 1</a>
+                    </div> 
+                    <div clas="step_link">
+                        <a href="#s2">step 2</a>
+                    </div> 
+                    <div clas="step_link">
+                         <a href="#s3">step 3</a>
+                    </div> 
+                    <div clas="step_link">
+                         <a href="#s4">step 4</a>
+                    </div> 
+                    <div clas="step_link">
+                         <a href="#s5">step 5</a>
+                    </div> 
+                </div>
+            </div>
 
 
-<!--  ----------------- SECTION recepie ---------------------------- -->
-    
-    <section class= "recepie">
-        
-        <!--  -------- fixed bar steps ------------ -->
-        <div class= "row bar_cont ">
-            <div class="step_div">
-                <a href="#">Burger</a>
+            <div class="row rece">
+                <div class="col-6 preparation">
+                    
+
+                        <div class="cont_directions">
+                            <img src="/Images/recepies/veganburger.jpg">
+                        
+                            <div class="rece_detail_container">
+                                
+                                <h3 id="tit">Mushroom-Quinoa Burger</h3>
+                            
+                                <h4>Directions:</h4>
+                                <div class="directions_list">
+                                    <ul class="direction_list">
+                                        <li id="s1" class="direction_item">
+                                            <h5>Step 1:</h5>
+                                            <b>Make the Burgers:</b> Preheat oven to 375 degrees F. In 3-quart, shallow baking dish, toss mushrooms with walnuts, garlic, 1 tablespoon oil, 3⁄4 teaspoon salt, and 1⁄4 teaspoon pepper; spread in even layer. Bake 20 minutes or until mushrooms are tender. Set aside to cool. Turn oven off. 
+                                        </li>
+                                        <li id="s2" class="direction_item">
+                                            <h5>Step 2:</h5>
+                                            In food processor, pulse mushroom mixture, red onion, green onions, and vinegar until mostly smooth, scraping side of bowl if necessary. Transfer mixture to a large bowl and stir in quinoa and cornstarch until well-blended. Cover bowl with plastic wrap and refrigerate 2 hours.
+                                        </li>
+                                        <li id="s3" class="direction_item">
+                                            <h5>Step 3:</h5>
+                                            Preheat oven to 375 degrees F. Line baking sheet with foil. Form mixture into 5 patties (about 1/2" thick and 3" wide). In a 12" nonstick skillet, heat remaining 1 tablespoon oil on medium. In 2 batches, cook patties 5 minutes or until well-browned, turning over once. Transfer seared patties to prepared baking sheet. Bake 10 minutes or until hot in centers. 
+                                        </li>
+                                        <li id="s4" class="direction_item">
+                                            <h5>Step 4:</h5>
+                                            <b>Make the Rosemary Mayo:</b> Meanwhile, combine mayonnaise, rosemary, lemon juice, and a pinch of salt. Keeps up to 5 days, refrigerated.
+                                        </li>
+                                        <li  id="s5" class="direction_item">
+                                            <h5>Step 5:</h5>
+                                            Serve burgers on buns with Rosemary Mayo, garnished with sprouts, lettuce, and tomato.
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                        </div>
+                </div>
+                <div class="col-6 cont_ingredients">
+                    <h4>Ingredients:</h4>
+                    <ul classs="ingredient_list">
+                        <li class="ingredient">
+                            <p>1 lb. English cucumbers, cut into pieces, plus more for serving </p> 
+                        </li>
+                        <li class="ingredient">
+                            <p>1/2 small honeydew melon, seeded and rind removed (about 1 pound), cut into pieces</p>
+                        </li>
+                        <li class="ingredient">
+                            <p>1/2 c.flat-leaf parsley</p>
+                        </li>
+                        <li class="ingredient">
+                            <p> 3 tbsp. red wine vinegar  </p>
+                        </li>
+                        <li class="ingredient">
+                            <p>1 tbsp. fresh lime juice</p>
+                        </li>
+                        <li class="ingredient">
+                            <p> 2 tsp. sugar </p>
+                        </li>
+                        <li class="ingredient">
+                            <p>Kosher salt and pepper</p>
+                        </li>
+                        <li class="ingredient">
+                            <p>Watercress, for serving</p>
+                        </li>
+                    
+                    </ul>
+                    
+                </div>
             </div>
-            <div class="step_div">
-                <a href="#">Step 1</a>
-            </div>
-            <div class="step_div col-2">
-                <a href="#">Step 2</a>
-            </div>
-            <div class="step_div col-2">
-                <a href="#">Step 3</a>
-            </div>
-            <div class="step_div col-2">
-                <a href="#">Step 4</a>
-            </div>
-            <div class="step_div col-2">
-                <a href="#">Step 5</a>
-            </div>
-    
         </div>
-        
-        <!--  -------- septs + ingred ------------ -->
-        <div class= "row rece1_cont">
-           
-            <!-- ---- septs --- -->
-            <div class= "col-6 steps_cont">
+        <span class="go_up"></span> 
+    <!-- </section> -->
     
-            </div>
-            
-            <!-- ---- ingredients --- -->
-            <div class= "col-6 ingre_cont">
-    
-            </div>
-            
-            
-            
-    
-        </div>
-
-    </section>
-
-<!--
   <footer class="footer">
     <div class="container footer__container">
       <div class="row">
@@ -125,7 +199,6 @@
       </div>
     </div>
   </footer>
--->
 </body>
 
 </html>
