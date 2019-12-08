@@ -1,0 +1,65 @@
+@import '../base/colours';
+@import '../layout/grid';
+
+.hero {
+  &__wrapper {
+    background-color: $Porcelain;
+    min-height: 450px;
+  }
+
+  &__title {
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    color: $font;
+    font-weight: bold;
+    max-width: 80%;
+  }
+}
+@media only screen and (min-width: $bp-sm) {
+  .hero {
+    &__title {
+      max-width: 60%;
+    }
+  }
+}
+@media only screen and (min-width: $bp-md) {
+  .hero {
+    &__title {
+      font-size: 4rem;
+    }
+
+    &__wrapper {
+      min-height: 600px;
+    }
+
+    &__main-row {
+      margin-left: 15%;
+    }
+  }
+}
+@media only screen and (min-width: $bp-lg) {
+  .hero {
+    &__title {
+      margin-left: -15%;
+    }
+
+    &__main-row {
+      margin-left: 10%;
+    }
+  }
+}
+@media only screen and (min-width: $bp-xl) {
+  .hero {
+    &__main-row {
+      margin-left: 20%;
+    }
+
+    &__title {
+      max-width: 40%;
+      font-size: 4.5rem;
+      margin-left: -8%;
+    }
+  }
+}

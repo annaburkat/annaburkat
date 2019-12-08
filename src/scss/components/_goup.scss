@@ -1,0 +1,36 @@
+/* ---------- | go back button | ----------  */
+
+.go_up {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 20px;
+  background: #f9b4ec;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 0 solid white;
+  border-radius: 5px;
+  z-index: 999;
+
+  &:before {
+    content: '^';
+    font-size: 1.5em;
+    line-height: 25px;
+    position: absolute;
+    border-color: inherit;
+    transition: transform 0.5s ease-in;
+    margin-left: 5px;
+  }
+
+  &:hover {
+    background-color: #fac4f0;
+
+    &:before {
+      transform: rotate(360deg);
+    }
+  }
+}

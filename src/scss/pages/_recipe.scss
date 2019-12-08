@@ -1,3 +1,6 @@
+@import '../base/colours';
+@import '../layout/grid';
+
 /* ==========| Alex styles |========== */
 
 
@@ -39,7 +42,7 @@
 a:link
 {
 text-decoration:none;
-} 
+}
 
 /* INGREDIENTS */
 .cont_ingredients{
@@ -66,7 +69,7 @@ text-decoration:none;
 .navbar_fix{
     top:0;
     height: 100px;
-    
+
 }
 
 .bar_cont{
