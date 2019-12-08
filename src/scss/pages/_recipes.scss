@@ -63,6 +63,7 @@
 }
 
 @media only screen and (min-width: $bp-sm) {
+  //Sections with recipes by diet
   .dietRecipes{
     &__img {
       max-width: 60%;
@@ -71,6 +72,7 @@
 }
 
 @media only screen and (min-width: $bp-md) {
+  //Sections with recipes by diet
   .dietRecipes{
     max-width: 80%;
     flex-direction: row;
@@ -88,6 +90,7 @@
 }
 
 @media only screen and (min-width: $bp-lg) {
+  //Top section with list of all diets
   .dietType{
     &__img{
       max-width: 60%;
@@ -96,6 +99,7 @@
 }
 
 @media only screen and (min-width: $bp-xl) {
+  //styles for each section on Recipes page
   .recipesSection{
     &--smaller{
       max-width: 90%;
