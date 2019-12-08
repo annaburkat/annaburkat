@@ -2,6 +2,9 @@
 @import '../layout/grid';
 
 
+.receSection{
+    padding: 150px 0;
+}
 
 .steps__container{
     background-color: white;
@@ -16,3 +19,20 @@ h4{
     font-size: 2em;
     margin: 0;
 }
+
+.homeHero {
+  &__button {
+    font-size: 1rem;
+    padding: 0.8rem;
+    background-color: $CaribbeanGreen;
+    color: #fff;
+    border: none;
+    display: block;
+    margin: 3rem 0 3rem 30%;
+
+    &:hover {
+      background-color: $Misteria;
+      cursor: pointer;
+    }
+  }
+    

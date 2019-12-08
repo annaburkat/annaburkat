@@ -578,7 +578,6 @@ body {
   border-radius: 5px;
   z-index: 999; }
   .go_up:before {
-    content: '^';
     font-size: 1.5em;
     line-height: 25px;
     position: absolute;
@@ -589,6 +588,13 @@ body {
     background-color: #fac4f0; }
     .go_up:hover:before {
       transform: rotate(360deg); }
+
+.goIngre {
+  position: fixed;
+  right: 15px;
+  bottom: 15px; }
+  .goIngre a {
+    text-decoration: none; }
 
 .container {
   width: 90%;
@@ -1857,3 +1863,44 @@ h4 {
   font-size: 14px; }
   .blog__text--green {
     color: #9562b6; }
+
+
+/* ALEX STYLES */
+
+.receSection{
+    padding: 150px 0;
+}
+
+.steps__container{
+    background-color: white;
+}
+
+.step_cont{
+    background-color: #bae2be;
+    padding: 15px;
+}
+.step_cont_done{
+    background-color: #EBF1F0;
+}
+h4{
+    font-size: 2em;
+    margin: 0;
+}
+
+
+/*.homeHero {
+  &__button {
+    font-size: 1rem;
+    padding: 0.8rem;
+    background-color: $CaribbeanGreen;
+    color: #fff;
+    border: none;
+    display: block;
+    margin: 3rem 0 3rem 30%;
+
+    &:hover {
+      background-color: $Misteria;
+      cursor: pointer;
+    }
+  }
+*/

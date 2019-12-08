@@ -36,6 +36,14 @@ $(document).ready(function() {
       $('.go_up').slideUp(300);
     }
   });
+    
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      $('.goIngre').slideDown(300);
+    } else {
+      $('.goIngre').slideUp(300);
+    }
+  });
 
 
   $('a[href^="#"]').click(function() {
@@ -54,36 +62,50 @@ $(document).ready(function() {
 
 });
 
+// ----------- buttons ----------- //
 
+$(document).ready(function() {
+    $('#changeColor5').click(function(){
+        $('#step5').toggleClass("step_cont_done");
+    });  
+    $('#changeColor4').click(function(){
+        $('#step4').toggleClass("step_cont_done");
+    }); 
+    $('#changeColor3').click(function(){
+        $('#step3').toggleClass("step_cont_done");
+    });  
+    $('#changeColor2').click(function(){
+        $('#step2').toggleClass("step_cont_done");
+    });
+    $('#changeColor1').click(function(){
+        $('#step1').toggleClass("step_cont_done");
+        
+    });
+});    
 
-// ---------- | list done | ----------  //
-
-
-
-
-/* (function () {
-           var previousScroll = 0;
-
-           $(window).scroll(function(){
-               var currentScroll = $(this).scrollTop();
-
-               if (currentScroll > previousScroll){
-                   $('.grow_bar').css('width','+=10px')
-               } else {
-                   $('.grow_bar').css('width','-=10px')
-               }
-               previousScroll = currentScroll;
-
-           });
-
-           var lastScrollTop = 0;
-               $(window).scroll(function(event){
-                  var st = $(this).scrollTop();
-                  if (st > lastScrollTop){
-                      // downscroll code
-                  } else {
-                     // upscroll code
-                  }
-                  lastScrollTop = st;
-               });
-        }()); */
+var valor = true
+function FbuttonDone5() {
+  var uno = document.getElementById('changeColor5');
+  valor?uno.innerText = "ENJOY!!":uno.innerText = "Done!";
+  valor=!valor
+}
+function FbuttonDone4() {
+  var uno = document.getElementById('changeColor4');
+  valor?uno.innerText = "Still trying":uno.innerText = "Done!";
+  valor=!valor
+}
+function FbuttonDone3() {
+  var uno = document.getElementById('changeColor3');
+  valor?uno.innerText = "Still trying":uno.innerText = "Done!";
+  valor=!valor
+}
+function FbuttonDone2() {
+  var uno = document.getElementById('changeColor2');
+  valor?uno.innerText = "Still trying":uno.innerText = "Done!";
+  valor=!valor
+}
+function FbuttonDone1() {
+  var uno = document.getElementById('changeColor1');
+  valor?uno.innerText = "Still trying":uno.innerText = "Done!";
+  valor=!valor
+}

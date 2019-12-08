@@ -17,7 +17,6 @@
   z-index: 999;
 
   &:before {
-    content: '^';
     font-size: 1.5em;
     line-height: 25px;
     position: absolute;
@@ -33,4 +32,17 @@
       transform: rotate(360deg);
     }
   }
+}
+
+.goIngre{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    margin: 0;
+    
+    & a{
+        text-decoration: none;
+    }
+    
+    &
 }
