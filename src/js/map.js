@@ -1,8 +1,8 @@
 //Conor - Google maps
 function initMap() {
   var location = {
-    lat: 53.3491058,
-    lng: -6.2450008
+    lat: 53.3489655,
+    lng: -6.243028
   };
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
@@ -25,7 +25,7 @@ function computeBMI() {
 
 
   //Convert all units to metric
-  if (heightunits == "inches") height /= 39.3700787;
+  if (heightunits == "inches") height /= 0.393700787;
   if (weightunits == "lb") weight /= 2.20462;
 
   //Perform calculation

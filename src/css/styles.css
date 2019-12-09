@@ -1044,6 +1044,12 @@ body {
   width: 90%;
   margin: 100px auto; }
 
+ul li {
+  font-size: x-large; }
+
+.address {
+  float: right; }
+
 .container {
   width: 90%;
   margin-left: auto;
@@ -1446,3 +1452,6 @@ body {
     text-align: center; }
   .calculator__text {
     text-align: left; }
+  .calculator__img {
+    height: 600px;
+    width: 700px; }

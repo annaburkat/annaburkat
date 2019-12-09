@@ -43,7 +43,7 @@
             <p>Enter your height:
               <input class="form__input" type="text" id="height" />
               <select type="multiple" id="heightunits">
-                <option value="metres" selected="selected">Centimeters</option>
+                <option value="centimeters" selected="selected">Centimeters</option>
                 <option value="inches">Inches</option>
               </select>
             </p>
@@ -54,12 +54,14 @@
                 <option value="lb">Pounds</option>
               </select>
             </p>
-            <input class="form__submit" type="submit" value="computeBMI" onclick="computeBMI();">
+            <input class="form__submit" type="submit" value="GetBMI" onclick="computeBMI();">
             <h1>Your BMI is: <span id="output">...</span></h1>
             <h2>This means you are: <span id="comment">...</span> </h2>
           </div>
         </div>
-        <div class="col col-6-md"></div>
+        <div class="col col-6-md">
+          <img class="calculator__img" src="Images/scales.jpg" alt="weighing scales">
+        </div>
       </div>
     </div>
 
