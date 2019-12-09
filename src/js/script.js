@@ -119,7 +119,7 @@ function FbuttonDone1() {
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 0) {
+  if (y > 800) {
     $('#stepbar').fadeIn();
   } else {
     $('#stepbar').fadeOut();
@@ -139,22 +139,13 @@ $('.steps__container').each(function () {
 
 /* ------- ingredients ------- */
 
-$('#steps').each(function () {
-    var y = $(document).scrollTop();
-    var t = $(this).parent().offset().top;
-    if (y > t) {
-        $('.ingredientsSection').fadeIn();
-    } else {
-        $('.ingredientsSection').fadeOut();
-    }
-});
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 800) {
     $('.ingredientsSection').fadeIn();
   } else {
-    $('.ingredientsSection').fadeOut();
-    $('.ingredientsSection').style.display = "none";
+    //$('.ingredientsSection').fadeOut();
+    $('.ingredientsSection').attr("style", "display:none");
   }
 });
