@@ -592,7 +592,8 @@ body {
 .goIngre {
   position: fixed;
   right: 15px;
-  bottom: 15px; }
+  bottom: 15px;
+  margin: 0; }
   .goIngre a {
     text-decoration: none; }
 
@@ -1591,16 +1592,131 @@ body {
   .col-12-xl {
     width: 96%; } }
 
-.steps__container {
-  background-color: white; }
+/* ALEX STYLES */
+.rece {
+  padding: 150px 0; }
+  .rece__img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto; }
 
-.step_cont {
-  background-color: #bae2be;
+.step {
+  background-color: #ebf1f0;
   padding: 15px; }
+  .step__done {
+    background-color: #0EC99D; }
+  .step__title {
+    font-size: 1.5em;
+    margin: 0; }
 
-h4 {
-  font-size: 2em;
-  margin: 0; }
+/* ---- ingerdients ------*/
+.btnIngredient {
+  position: fixed;
+  z-index: 9997;
+  bottom: 0;
+  width: 100%; }
+  .btnIngredient__button {
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1rem;
+    height: 50px;
+    padding: 0.8rem;
+    background-color: #0EC99D;
+    color: #fff;
+    border: none;
+    display: block; }
+
+.ingre {
+  position: fixed;
+  z-index: 9996;
+  bottom: -500px;
+  left: 0;
+  background-color: white;
+  width: 100%; }
+  .ingre--mobile {
+    position: fixed;
+    z-index: 9996;
+    bottom: 50px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 0 !important; }
+  .ingre__title--mobile {
+    font-size: 1.5em; }
+
+@media only screen and (min-width: 960px) {
+  .rece__title {
+    max-width: 80%; }
+  /* ----- STEP BAR ---- */
+  .stepbar {
+    position: fixed;
+    z-index: 9998;
+    top: 95.5px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: none; }
+    .stepbar__position {
+      display: flex;
+      justify-content: space-between;
+      align-content: center; }
+    .stepbar__step {
+      background-color: white;
+      width: 100%;
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .stepbar__step--done {
+        background-color: #0EC99D; }
+      .stepbar__step--first {
+        background-color: #0EC99D; }
+    .stepbar__link {
+      text-decoration: none;
+      color: #616770;
+      margin: auto;
+      line-height: 50px;
+      display: block;
+      text-align: center; }
+      .stepbar__link--first {
+        color: #fff; }
+  /* --- STEPS SEC --- */
+  .steps {
+    margin-bottom: 15px; }
+  .ingre {
+    position: static;
+    width: 46%;
+    background-color: #ebf1f0; }
+    .ingre__title {
+      font-size: 4.5rem;
+      text-align: left;
+      padding: 0 1rem;
+      color: #616770;
+      font-weight: bold;
+      max-width: 80%; }
+  /* --- INGREDIENTS SEC--- */
+  .btnIngredient {
+    display: none; }
+  .btnIngredientDeskt {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    right: 200px; }
+    .btnIngredientDeskt__button {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1rem;
+      padding: 0.8rem;
+      background-color: #0EC99D;
+      color: #fff;
+      border: none;
+      display: block; } }
+
+@media only screen and (max-width: 959px) {
+  .btnIngredientDeskt {
+    display: none; } }
 
 .container {
   width: 90%;
@@ -1863,212 +1979,3 @@ h4 {
   font-size: 14px; }
   .blog__text--green {
     color: #9562b6; }
-
-
-/* ALEX STYLES */
-
-.rece__section{
-    padding: 150px 0;
-}
-
-.stepSection{
-    margin-bottom: 100px;
-}
-.steps__container{
-    background-color: white;
-}
-
-.step_cont{
-    background-color: #EBF1F0;
-    padding: 15px;
-}
-.step_cont_done{
-    background-color: #bae2be;
-}
-h4{
-    font-size: 1.5em;
-    margin: 0;
-}
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-
-/* ---- ingerdients ------*/
-.ingredients__button__cont{
-    position: fixed;
-    z-index: 9997;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    
-    
-}
-.ingredients__button{
-    width: 100%;
-    margin : 0 auto;
-    height: 40px;
-    
-}
-
-.ingre__container{
-    position: fixed;
-    z-index: 9996;
-    bottom: -500px;
-    left: 0;
-    background-color: white;
-    width: 100%;
-}
-
-.ingre__container__up{
-    position: fixed;
-    z-index: 9996;
-    bottom: 50px;
-    left: 0;
-    background-color: white;
-    width: 100%;
-    margin-bottom: 0 !important;
-
-}
-
-.ingre__container__up h3{
-   font-size: 1.5em; 
-}
-.ingre__container__up p{
-    line-height: 1.2em;
-    
-}
-/*.homeHero {
-  &__button {
-    font-size: 1rem;
-    padding: 0.8rem;
-    background-color: $CaribbeanGreen;
-    color: #fff;
-    border: none;
-    display: block;
-    margin: 3rem 0 3rem 30%;
-
-    &:hover {
-      background-color: $Misteria;
-      cursor: pointer;
-    }
-  }
-*/
-
-
-@media only screen and (min-width: 960px) {
-    .rece__title{
-        max-width: 80%;
-
-    }
-
-    /* ----- STEP BAR ---- */
-    .stepbar__section{
-        position: fixed;
-        z-index: 9998;
-        top: 95.5px;
-        width: 100%;
-        height: 50px;
-        background-color: white;
-        display: none;
-    
-    }
-    
-    .stepbar__step{
-        background-color: white;
-        width: 100%;
-        height: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
-    .stepbar__step__done{
-        height: 50px;
-        background-color: #BAE2BE;
-    }
-    
-
-    .stepbar__link{
-        text-decoration: none;
-        color: #616770;
-        margin: auto;
-    }
-    
-    #stepbar0{
-        background-color:#BAE2BE;
-    }
-    
-    
-    .stepbar__step__enjoy p{
-        margin: auto;
-    }
-    
-    /* --- STEPS SEC --- */
-    
-    .steps__section{
-        margin-bottom: 15px;
-    }
-    
-    /* --- INGREDIENTS SEC--- */
-    .ingredients__button__cont{
-        display: none;
-    }
-    
-    .ingre__container{
-        position: static;
-        width: 46%;
-        background-color:#EBF1F0 ;
-    }
-    
-    #ingreBtnBr{
-        display: none;
-    }
-    .ingredients__buttonBr{
-        position: fixed;
-        z-index: 9999;
-        bottom: 20px;
-        right: 200px;
-    }
-    
-    .ingredients__buttonBr a{
-        text-decoration: none;
-        color: white;
-    }
-    
-    /*.ingre__container_fix{
-        position: fixed;
-        right: 150px;
-        top: 150px;
-        z-index: 9995;
-        background-color:#EBF1F0;
-        width: 454px;
-    }
-
-    .ingredientsSection{
-        position: fixed;
-        right: 100px;
-        top: 150px;
-        z-index: 9997;
-        
-    }
-    */
-
-}
-
-@media only screen and (max-width: 959px) {
-    .stepbar__section{
-        display: none;
-    }
-    
-    .rece_img{
-        max-width: 45%;
-        display: block;
-        margin: 0 auto;
-    }
-    
-    .ingredients__buttonBr{
-        display: none;
-    }
-}

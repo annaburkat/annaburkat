@@ -1,63 +1,60 @@
 @import '../base/colours';
 @import '../layout/grid';
 /* ALEX STYLES */
+.rece {
+  padding: 150px 0;
 
-.rece__section{
-    padding: 150px 0;
-}
-
-.stepSection{
-    margin-bottom: 100px;
-}
-.steps__container{
-    background-color: white;
+  &__img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
-.step_cont{
-    background-color: #EBF1F0;
-    padding: 15px;
-}
-.step_cont_done{
-    background-color: #bae2be;
-}
-h4{
+.step {
+  background-color: $Porcelain;
+  padding: 15px;
+
+  &__done {
+    background-color: $CaribbeanGreen;
+  }
+
+  &__title {
     font-size: 1.5em;
     margin: 0;
+  }
 }
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-
 /* ---- ingerdients ------*/
-.ingredients__button__cont{
-    position: fixed;
-    z-index: 9997;
-    bottom: 0;
+
+.btnIngredient {
+  position: fixed;
+  z-index: 9997;
+  bottom: 0;
+  width: 100%;
+
+  &__button {
     width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1rem;
     height: 50px;
-    
-    
-}
-.ingredients__button{
-    width: 100%;
-    margin : 0 auto;
-    height: 40px;
-    
+    padding: 0.8rem;
+    background-color: #0EC99D;
+    color: #fff;
+    border: none;
+    display: block;
+  }
 }
 
-.ingre__container{
-    position: fixed;
-    z-index: 9996;
-    bottom: -500px;
-    left: 0;
-    background-color: white;
-    width: 100%;
-}
+.ingre {
+  position: fixed;
+  z-index: 9996;
+  bottom: -500px;
+  left: 0;
+  background-color: white;
+  width: 100%;
 
-.ingre__container__up{
+  &--mobile {
     position: fixed;
     z-index: 9996;
     bottom: 50px;
@@ -65,145 +62,111 @@ h4{
     background-color: white;
     width: 100%;
     margin-bottom: 0 !important;
+  }
 
-}
-
-.ingre__container__up h3{
-   font-size: 1.5em; 
-}
-.ingre__container__up p{
-    line-height: 1.2em;
-    
-}
-/*.homeHero {
-  &__button {
-    font-size: 1rem;
-    padding: 0.8rem;
-    background-color: $CaribbeanGreen;
-    color: #fff;
-    border: none;
-    display: block;
-    margin: 3rem 0 3rem 30%;
-
-    &:hover {
-      background-color: $Misteria;
-      cursor: pointer;
+  &__title {
+    &--mobile {
+      font-size: 1.5em;
     }
   }
-*/
-
-
-@media only screen and (min-width: 960px) {
-    .rece__title{
-        max-width: 80%;
-
-    }
-
-    /* ----- STEP BAR ---- */
-    .stepbar__section{
-        position: fixed;
-        z-index: 9998;
-        top: 95.5px;
-        width: 100%;
-        height: 50px;
-        background-color: white;
-        display: none;
-    
-    }
-    
-    .stepbar__step{
-        background-color: white;
-        width: 100%;
-        height: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
-    .stepbar__step__done{
-        height: 50px;
-        background-color: #BAE2BE;
-    }
-    
-
-    .stepbar__link{
-        text-decoration: none;
-        color: #616770;
-        margin: auto;
-    }
-    
-    #stepbar0{
-        background-color:#BAE2BE;
-    }
-    
-    
-    .stepbar__step__enjoy p{
-        margin: auto;
-    }
-    
-    /* --- STEPS SEC --- */
-    
-    .steps__section{
-        margin-bottom: 15px;
-    }
-    
-    /* --- INGREDIENTS SEC--- */
-    .ingredients__button__cont{
-        display: none;
-    }
-    
-    .ingre__container{
-        position: static;
-        width: 46%;
-        background-color:#EBF1F0 ;
-    }
-    
-    #ingreBtnBr{
-        display: none;
-    }
-    .ingredients__buttonBr{
-        position: fixed;
-        z-index: 9999;
-        bottom: 20px;
-        right: 200px;
-    }
-    
-    .ingredients__buttonBr a{
-        text-decoration: none;
-        color: white;
-    }
-    
-    /*.ingre__container_fix{
-        position: fixed;
-        right: 150px;
-        top: 150px;
-        z-index: 9995;
-        background-color:#EBF1F0;
-        width: 454px;
-    }
-
-    .ingredientsSection{
-        position: fixed;
-        right: 100px;
-        top: 150px;
-        z-index: 9997;
-        
-    }
-    */
-
 }
+@media only screen and (min-width: $bp-lg) {
+  .rece {
+    &__title {
+      max-width: 80%;
+    }
+  }
+  /* ----- STEP BAR ---- */
+  .stepbar {
+    position: fixed;
+    z-index: 9998;
+    top: 95.5px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: none;
 
+    &__position {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+
+    &__step {
+      background-color: white;
+      width: 100%;
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &--done {
+        background-color: $CaribbeanGreen;
+      }
+
+      &--first {
+        background-color: $CaribbeanGreen;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $font;
+      margin: auto;
+      line-height: 50px;
+      display: block;
+      text-align: center;
+
+      &--first {
+        color: $white;
+      }
+    }
+  }
+  /* --- STEPS SEC --- */
+  .steps {
+    margin-bottom: 15px;
+  }
+
+  .ingre {
+    position: static;
+    width: 46%;
+    background-color: $Porcelain;
+
+    &__title {
+      font-size: 4.5rem;
+      text-align: left;
+      padding: 0 1rem;
+      color: #616770;
+      font-weight: bold;
+      max-width: 80%;
+    }
+  }
+  /* --- INGREDIENTS SEC--- */
+  .btnIngredient {
+    display: none;
+  }
+
+  .btnIngredientDeskt {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    right: 200px;
+
+    &__button {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1rem;
+      padding: 0.8rem;
+      background-color: #0EC99D;
+      color: #fff;
+      border: none;
+      display: block;
+    }
+  }
+}
 @media only screen and (max-width: 959px) {
-    .stepbar__section{
-        display: none;
-    }
-    
-    .rece_img{
-        max-width: 45%;
-        display: block;
-        margin: 0 auto;
-    }
-    
-    .ingredients__buttonBr{
-        display: none;
-    }
+  .btnIngredientDeskt {
+    display: none;
+  }
 }

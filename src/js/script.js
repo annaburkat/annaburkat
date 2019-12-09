@@ -36,7 +36,7 @@ $(document).ready(function() {
       $('.go_up').slideUp(300);
     }
   });
-    
+
     $(window).scroll(function() {
     if ($(this).scrollTop() > 0) {
       $('.goIngre').slideDown(300);
@@ -60,92 +60,120 @@ $(document).ready(function() {
     return false;
   });
 
+  $('.stepbar__link').click(function() {
+    var destino = $(this.hash);
+    if (destino.length == 0) {
+      destino = $('a[name="' + this.hash.substr(1) + '"]');
+    }
+    if (destino.length == 0) {
+      destino = $('html');
+    }
+    $('html, body').animate({
+      scrollTop: destino.offset().top -150
+    }, 500);
+    return false;
+  });
+
+  $('.ingredients__buttonBr').click(function() {
+    var destino = $(this.hash);
+    if (destino.length == 0) {
+      destino = $('a[name="' + this.hash.substr(1) + '"]');
+    }
+    if (destino.length == 0) {
+      destino = $('html');
+    }
+    $('html, body').animate({
+      scrollTop: destino.offset().top -200
+    }, 500);
+    return false;
+  });
+
 });
 
 // ----------- buttons ----------- //
 
 $(document).ready(function() {
     $('#changeColor5').click(function(){
-        $('#step5').toggleClass("step_cont_done");
-        $('#stepbar5').toggleClass("stepbar__step__done");
-    });  
+        $('#step5').toggleClass("step__done");
+        $('#stepbar5').toggleClass("stepbar__step--done");
+    });
     $('#changeColor4').click(function(){
-        $('#step4').toggleClass("step_cont_done");
-        $('#stepbar4').toggleClass("stepbar__step__done");
-    }); 
+        $('#step4').toggleClass("step__done");
+        $('#stepbar4').toggleClass("stepbar__step--done");
+    });
     $('#changeColor3').click(function(){
-        $('#step3').toggleClass("step_cont_done");
-        $('#stepbar3').toggleClass("stepbar__step__done");
-    });  
+        $('#step3').toggleClass("step__done");
+        $('#stepbar3').toggleClass("stepbar__step--done");
+    });
     $('#changeColor2').click(function(){
-        $('#step2').toggleClass("step_cont_done");
-        $('#stepbar2').toggleClass("stepbar__step__done");
+        $('#step2').toggleClass("step__done");
+        $('#stepbar2').toggleClass("stepbar__step--done");
     });
     $('#changeColor1').click(function(){
-        $('#step1').toggleClass("step_cont_done");
-        $('#stepbar1').toggleClass("stepbar__step__done");    
+        $('#step1').toggleClass("step__done");
+        $('#stepbar1').toggleClass("stepbar__step--done");
     });
-    
-    
-    
+
+
+
     $('#ingreBtn').click(function(){
-            $('#ingreCont').toggleClass("ingre__container__up");
+        $('#ingreCont').toggleClass("ingre--mobile");
      });
-    
-    
+
+
     $('#changeColor1').click(function(){
 		var $this = $(this);
 		$this.toggleClass('done');
 		if($this.hasClass('done')){
-			$this.text('Still on it...');			
+			$this.text('Still on it...');
 		} else {
 			$this.text('Done!');
 		}
 	});
-    
+
       $('#changeColor2').click(function(){
 		var $this = $(this);
 		$this.toggleClass('done');
 		if($this.hasClass('done')){
-			$this.text('Still on it...');			
+			$this.text('Still on it...');
 		} else {
 			$this.text('Done!');
 		}
 	});
-    
+
       $('#changeColor3').click(function(){
 		var $this = $(this);
 		$this.toggleClass('done');
 		if($this.hasClass('done')){
-			$this.text('Still on it...');			
+			$this.text('Still on it...');
 		} else {
 			$this.text('Done!');
 		}
 	});
-    
+
       $('#changeColor4').click(function(){
 		var $this = $(this);
 		$this.toggleClass('done');
 		if($this.hasClass('done')){
-			$this.text('Still on it...');			
+			$this.text('Still on it...');
 		} else {
 			$this.text('Done!');
 		}
 	});
-    
+
       $('#changeColor5').click(function(){
 		var $this = $(this);
 		$this.toggleClass('done');
 		if($this.hasClass('done')){
-			$this.text('Enjoy!');			
+			$this.text('Enjoy!');
 		} else {
 			$this.text('Done!');
 		}
 	});
-    
-      
-    
-});    
+
+
+
+});
 
 /*
 var valor = true
@@ -185,7 +213,7 @@ $(document).scroll(function() {
   if (y > 790) {
     $('#stepbar').fadeIn();
     $('#stepbar').css({'display':'block'})
-      
+
   } else {
     $('#stepbar').fadeOut();
   }
@@ -196,7 +224,7 @@ $(document).scroll(function() {
   if (y > 790) {
     $('#ingreBtnBr').fadeIn();
     $('#ingreBtnBr').css({'display':'block'})
-      
+
   } else {
     $('#ingreBtnBr').fadeOut();
   }
