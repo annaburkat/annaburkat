@@ -1896,6 +1896,42 @@ h4{
     align-content: center;
 }
 
+/* ---- ingerdients ------*/
+.ingredients__button__cont{
+    position: fixed;
+    z-index: 9997;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    
+    
+}
+.ingredients__button{
+    width: 100%;
+    margin : 0 auto;
+    height: 40px;
+    
+}
+
+.ingre__container{
+    position: fixed;
+    z-index: 9996;
+    bottom: -500px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.ingre__container__up{
+    position: fixed;
+    z-index: 9996;
+    bottom: 50px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+
+}
+
 
 /*.homeHero {
   &__button {
@@ -1955,6 +1991,30 @@ h4{
         background-color:#BAE2BE;
     }
     
+    .steps__section{
+        margin-bottom: 15px;
+    }
+    
+    .ingredients__button__cont{
+        display: none;
+    }
+    
+    .ingre__container{
+        position: static;
+        width: 46%;
+        background-color:#EBF1F0 ;
+    }
+    
+    .ingre__container_fix{
+        position: fixed;
+        right: 150px;
+        top: 150px;
+        z-index: 9995;
+        background-color:#EBF1F0;
+        width: 454px;
+    }
+
+    /*
     .ingredientsSection{
         position: fixed;
         right: 100px;
@@ -1962,6 +2022,7 @@ h4{
         z-index: 9997;
         
     }
+    */
 
 }
 

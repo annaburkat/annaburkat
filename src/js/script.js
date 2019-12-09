@@ -86,32 +86,39 @@ $(document).ready(function() {
         $('#stepbar1').toggleClass("stepbar__step__done");
         
     });
+    
+    
+    
+    $('#ingreBtn').click(function(){
+            $('#ingreCont').toggleClass("ingre__container__up");
+
+     });
 });    
 
 var valor = true
 function FbuttonDone5() {
-  var uno = document.getElementById('changeColor5');
-  valor?uno.innerText = "ENJOY!!":uno.innerText = "Done!";
+  var five = document.getElementById('changeColor5');
+  valor?five.innerText = "ENJOY!!":five.innerText = "Done!";
   valor=!valor
 }
 function FbuttonDone4() {
-  var uno = document.getElementById('changeColor4');
-  valor?uno.innerText = "Still trying":uno.innerText = "Done!";
+  var four = document.getElementById('changeColor4');
+  valor?four.innerText = "Still trying":four.innerText = "Done!";
   valor=!valor
 }
 function FbuttonDone3() {
-  var uno = document.getElementById('changeColor3');
-  valor?uno.innerText = "Still trying":uno.innerText = "Done!";
+  var three = document.getElementById('changeColor3');
+  valor?three.innerText = "Still trying":three.innerText = "Done!";
   valor=!valor
 }
 function FbuttonDone2() {
-  var uno = document.getElementById('changeColor2');
-  valor?uno.innerText = "Still trying":uno.innerText = "Done!";
+  var two = document.getElementById('changeColor2');
+  valor?two.innerText = "Still trying":two.innerText = "Done!";
   valor=!valor
 }
 function FbuttonDone1() {
-  var uno = document.getElementById('changeColor1');
-  valor?uno.innerText = "Still trying":uno.innerText = "Done!";
+  var one = document.getElementById('changeColor1');
+  valor?one.innerText = "Still trying":one.innerText = "Done!";
   valor=!valor
 }
 
@@ -119,10 +126,21 @@ function FbuttonDone1() {
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 800) {
+  if (y > 790) {
     $('#stepbar').fadeIn();
   } else {
     $('#stepbar').fadeOut();
+  }
+});
+
+$(document).scroll(function() {
+  var z = $(this).scrollTop();
+  if (z > 800) {
+    $('#ingreCont').addClass("ingre__container_fix");
+    $('#ingreCont').removeClass("ingre__container");
+  } else {
+    $('#ingreCont').addClass("ingre__container")
+    $('#ingreCont').removeClass("ingre__container_fix");
   }
 });
 
@@ -137,7 +155,7 @@ $('.steps__container').each(function () {
     }
 });*/
 
-/* ------- ingredients ------- */
+
 
 
 $(document).scroll(function() {
