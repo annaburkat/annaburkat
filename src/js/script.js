@@ -67,7 +67,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#changeColor5').click(function(){
         $('#step5').toggleClass("step_cont_done");
-        $('#stepbar5').toggleClass("stepbar__step__done");
+        $('#stepbar5').toggleClass("stepbar__step__enjoy");
     });  
     $('#changeColor4').click(function(){
         $('#step4').toggleClass("step_cont_done");
@@ -96,6 +96,11 @@ $(document).ready(function() {
 });    
 
 var valor = true
+function FbuttonEnjoy(){
+  var six = document.getElementById('stepbar5');
+  valor?six.innerText = "ENJOY!!":six.innerText = "step 5";
+  valor=!valor
+}
 function FbuttonDone5() {
   var five = document.getElementById('changeColor5');
   valor?five.innerText = "ENJOY!!":five.innerText = "Done!";
@@ -128,6 +133,8 @@ $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 790) {
     $('#stepbar').fadeIn();
+    $('#stepbar').css({'display':'block'})
+      
   } else {
     $('#stepbar').fadeOut();
   }

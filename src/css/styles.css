@@ -1929,10 +1929,17 @@ h4{
     left: 0;
     background-color: white;
     width: 100%;
+    margin-bottom: 0 !important;
 
 }
 
-
+.ingre__container__up h3{
+   font-size: 1.5em; 
+}
+.ingre__container__up p{
+    line-height: 1.2em;
+    
+}
 /*.homeHero {
   &__button {
     font-size: 1rem;
@@ -1956,7 +1963,8 @@ h4{
         max-width: 80%;
 
     }
-    
+
+    /* ----- STEP BAR ---- */
     .stepbar__section{
         position: fixed;
         z-index: 9998;
@@ -1964,6 +1972,7 @@ h4{
         width: 100%;
         height: 50px;
         background-color: white;
+        display: none;
     
     }
     
@@ -1991,10 +2000,24 @@ h4{
         background-color:#BAE2BE;
     }
     
+    
+    .stepbar__step__enjoy{
+        height: 50px;
+        background-color: #9562B6;
+        color: white;
+    }
+    
+    .stepbar__step__enjoy p{
+        margin: auto;
+    }
+    
+    /* --- STEPS SEC --- */
+    
     .steps__section{
         margin-bottom: 15px;
     }
     
+    /* --- INGREDIENTS SEC--- */
     .ingredients__button__cont{
         display: none;
     }
