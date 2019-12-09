@@ -67,7 +67,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#changeColor5').click(function(){
         $('#step5').toggleClass("step_cont_done");
-        $('#stepbar5').toggleClass("stepbar__step__enjoy");
+        $('#stepbar5').toggleClass("stepbar__step__done");
     });  
     $('#changeColor4').click(function(){
         $('#step4').toggleClass("step_cont_done");
@@ -83,24 +83,73 @@ $(document).ready(function() {
     });
     $('#changeColor1').click(function(){
         $('#step1').toggleClass("step_cont_done");
-        $('#stepbar1').toggleClass("stepbar__step__done");
-        
+        $('#stepbar1').toggleClass("stepbar__step__done");    
     });
     
     
     
     $('#ingreBtn').click(function(){
             $('#ingreCont').toggleClass("ingre__container__up");
-
      });
+    
+    
+    $('#changeColor1').click(function(){
+		var $this = $(this);
+		$this.toggleClass('done');
+		if($this.hasClass('done')){
+			$this.text('Still on it...');			
+		} else {
+			$this.text('Done!');
+		}
+	});
+    
+      $('#changeColor2').click(function(){
+		var $this = $(this);
+		$this.toggleClass('done');
+		if($this.hasClass('done')){
+			$this.text('Still on it...');			
+		} else {
+			$this.text('Done!');
+		}
+	});
+    
+      $('#changeColor3').click(function(){
+		var $this = $(this);
+		$this.toggleClass('done');
+		if($this.hasClass('done')){
+			$this.text('Still on it...');			
+		} else {
+			$this.text('Done!');
+		}
+	});
+    
+      $('#changeColor4').click(function(){
+		var $this = $(this);
+		$this.toggleClass('done');
+		if($this.hasClass('done')){
+			$this.text('Still on it...');			
+		} else {
+			$this.text('Done!');
+		}
+	});
+    
+      $('#changeColor5').click(function(){
+		var $this = $(this);
+		$this.toggleClass('done');
+		if($this.hasClass('done')){
+			$this.text('Enjoy!');			
+		} else {
+			$this.text('Done!');
+		}
+	});
+    
+      
+    
 });    
 
+/*
 var valor = true
-function FbuttonEnjoy(){
-  var six = document.getElementById('stepbar5');
-  valor?six.innerText = "ENJOY!!":six.innerText = "step 5";
-  valor=!valor
-}
+
 function FbuttonDone5() {
   var five = document.getElementById('changeColor5');
   valor?five.innerText = "ENJOY!!":five.innerText = "Done!";
@@ -116,16 +165,18 @@ function FbuttonDone3() {
   valor?three.innerText = "Still trying":three.innerText = "Done!";
   valor=!valor
 }
-function FbuttonDone2() {
+/*function FbuttonDone2() {
   var two = document.getElementById('changeColor2');
   valor?two.innerText = "Still trying":two.innerText = "Done!";
   valor=!valor
 }
+
+
 function FbuttonDone1() {
   var one = document.getElementById('changeColor1');
   valor?one.innerText = "Still trying":one.innerText = "Done!";
   valor=!valor
-}
+}*/
 
 /* -------  stepbar -----------*/
 
@@ -141,6 +192,17 @@ $(document).scroll(function() {
 });
 
 $(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 790) {
+    $('#ingreBtnBr').fadeIn();
+    $('#ingreBtnBr').css({'display':'block'})
+      
+  } else {
+    $('#ingreBtnBr').fadeOut();
+  }
+});
+
+/*$(document).scroll(function() {
   var z = $(this).scrollTop();
   if (z > 800) {
     $('#ingreCont').addClass("ingre__container_fix");
@@ -151,19 +213,6 @@ $(document).scroll(function() {
   }
 });
 
-/*
-$('.steps__container').each(function () {
-    var y = $(document).scrollTop();
-    var t = $(this).parent().offset().top;
-    if (y > t) {
-        $('#stepbar').fadeIn();
-    } else {
-        $('#stepbar').fadeOut();
-    }
-});*/
-
-
-
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
@@ -173,4 +222,4 @@ $(document).scroll(function() {
     //$('.ingredientsSection').fadeOut();
     $('.ingredientsSection').attr("style", "display:none");
   }
-});
+});*/

@@ -1879,11 +1879,11 @@ h4 {
 }
 
 .step_cont{
-    background-color: #bae2be;
+    background-color: #EBF1F0;
     padding: 15px;
 }
 .step_cont_done{
-    background-color: #EBF1F0;
+    background-color: #bae2be;
 }
 h4{
     font-size: 1.5em;
@@ -2001,12 +2001,6 @@ h4{
     }
     
     
-    .stepbar__step__enjoy{
-        height: 50px;
-        background-color: #9562B6;
-        color: white;
-    }
-    
     .stepbar__step__enjoy p{
         margin: auto;
     }
@@ -2028,7 +2022,22 @@ h4{
         background-color:#EBF1F0 ;
     }
     
-    .ingre__container_fix{
+    #ingreBtnBr{
+        display: none;
+    }
+    .ingredients__buttonBr{
+        position: fixed;
+        z-index: 9999;
+        bottom: 20px;
+        right: 200px;
+    }
+    
+    .ingredients__buttonBr a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    /*.ingre__container_fix{
         position: fixed;
         right: 150px;
         top: 150px;
@@ -2037,7 +2046,6 @@ h4{
         width: 454px;
     }
 
-    /*
     .ingredientsSection{
         position: fixed;
         right: 100px;
@@ -2051,6 +2059,16 @@ h4{
 
 @media only screen and (max-width: 959px) {
     .stepbar__section{
+        display: none;
+    }
+    
+    .rece_img{
+        max-width: 45%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .ingredients__buttonBr{
         display: none;
     }
 }
