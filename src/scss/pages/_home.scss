@@ -2,7 +2,7 @@
 @import '../layout/grid';
 
 .homeSection {
-  padding: 50px 0;
+  padding: 50px 0 25px;
 
   &--first {
     padding: 150px 0 50px;
@@ -13,22 +13,7 @@
   }
 }
 
-.hero {
-  &__wrapper {
-    background-color: $Porcelain;
-    min-height: 450px;
-  }
-
-  &__title {
-    font-size: 3rem;
-    text-align: left;
-    padding: 0 1rem;
-    margin: 1rem 0;
-    color: $font;
-    font-weight: bold;
-    max-width: 80%;
-  }
-
+.homeHero {
   &__button {
     text-transform: uppercase;
     font-size: 1rem;
@@ -37,7 +22,9 @@
     color: #fff;
     border: none;
     display: block;
-    margin: 3rem 0 3rem 30%;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
 
     &:hover {
       background-color: $Misteria;
@@ -63,11 +50,7 @@
   }
 }
 @media only screen and (min-width: $bp-sm) {
-  .hero {
-    &__title {
-      max-width: 60%;
-    }
-
+  .homeHero {
     &__button {
       margin: 4rem auto;
     }
@@ -84,19 +67,7 @@
   }
 }
 @media only screen and (min-width: $bp-md) {
-  .hero {
-    &__title {
-      font-size: 4rem;
-    }
-
-    &__wrapper {
-      min-height: 600px;
-    }
-
-    &__main-row {
-      margin-left: 15%;
-    }
-
+  .homeHero {
     &__button {
       margin: 6rem 0 3rem 1rem;
     }
@@ -108,17 +79,9 @@
   }
 }
 @media only screen and (min-width: $bp-lg) {
-  .hero {
-    &__title {
-      margin-left: -15%;
-    }
-
+  .homeHero {
     &__button {
       margin: 6rem 0 3rem 1rem;
-    }
-
-    &__main-row {
-      margin-left: 10%;
     }
 
     &__img {
@@ -129,20 +92,10 @@
   }
 }
 @media only screen and (min-width: $bp-xl) {
-  .hero {
-    &__main-row {
-      margin-left: 20%;
-    }
-
-    &__title {
-      max-width: 40%;
-      font-size: 4.5rem;
-      margin-left: -8%;
-    }
-
+  .homeHero {
     &__img {
       width: 50%;
-      margin-top: -8%;
+      margin-top: -25%;
       margin-left: 35%;
     }
   }
@@ -176,7 +129,6 @@
     padding: 0 15px 10px;
   }
 }
-
 .intro {
   &__link {
     cursor: pointer;
@@ -197,16 +149,6 @@
     flex-direction: row;
   }
 
-  &__image {
-    max-width: 80%;
-    display: block;
-    margin: 1rem auto 2rem;
-  }
-
-  &__image-text {
-    text-align: center;
-  }
-
   &__diet {
     padding: 1rem;
   }
@@ -222,23 +164,32 @@
     margin-top: 2rem;
   }
 }
-@media only screen and (min-width: $bp-sm) {
-  .intro {
-    &__image-wrapper {
-      display: flex;
-      flex-direction: row;
-    }
+.sliderImg {
+  margin: 50px auto 0px;
+  &__image {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  &__wrapperText{
 
+  }
+  &__text{
+    text-align: center;
+  }
+}
+@media only screen and (min-width: $bp-sm) {
+  .sliderImg {
+    display: flex;
+    flex-direction: row;
     &__image {
       max-width: 40%;
     }
-
-    &__image-text-wrapper {
+    &__wrapperText{
       position: relative;
       width: 50%;
     }
-
-    &__image-text {
+    &__text{
       margin: 0;
       position: absolute;
       top: 50%;
@@ -249,62 +200,43 @@
   }
 }
 @media only screen and (min-width: $bp-md) {
-  .intro {
-    &__image-wrapper {
-      display: flex;
-      flex-direction: row;
-      flex-flow: row-reverse;
-    }
-  }
-}
-@media only screen and (min-width: $bp-lg) {
-  .intro {
-    max-width: 100%;
-    margin: 0 auto;
-
-    &__block {
-      text-align: center;
-    }
-
-    &__image-wrapper {
-      display: block;
-      margin-top: 50%;
-    }
-
-    &__text {
-      text-align: center;
-      max-width: 60%;
-      display: block;
-      margin: 0 auto;
-    }
-
-    &__image-text-wrapper {
-      width: 100%;
-    }
-
-    &__image-text {
-      position: relative;
-    }
-
-    &__text {
-      max-width: 80%;
-    }
-
-    &__image {
-      max-width: 100%;
-      margin: 2rem 0;
-    }
+  .sliderImg {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
   }
 }
 @media only screen and (min-width: $bp-xl) {
   .intro {
-    &__image-wrapper {
-      display: block;
-      margin-top: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &__offset {
+      margin-left: 24%!important;
+    }
+    &__block {
+      text-align: center;
     }
 
     &__text {
-      max-width: 50%;
+      text-align: center;
+      max-width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .sliderImg {
+    max-width: 25%;
+    display: block;
+    top:120px;
+    margin-top:0px;
+    position: absolute;
+    &__image {
+      max-width: 100%;
+    }
+    &__text {
+      display: none;
     }
   }
 }

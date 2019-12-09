@@ -1,18 +1,19 @@
 @import '../base/colours';
 
 .navbar {
-  background-color: #fff;
+  background-color:$Porcelain;
   /* For Safari 3.1 to 6.0 */
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
   position: fixed;
-  padding: 15px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
   z-index: 99999999;
   box-sizing: border-box;
 
   &--scrolled {
-    background-color: $PowderBlue;
+    background-color: $PowderBlue!important;
     /* For Safari 3.1 to 6.0 */
     -webkit-transition: background-color 0.5s;
     transition: background-color 0.5s;
@@ -25,7 +26,7 @@
   }
 
   &__logo {
-    color: pink;
+    color: red;
     margin-left: 15px;
   }
 
@@ -34,12 +35,23 @@
     padding: 15px;
   }
 
+  &__ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto 0px;
+    padding-left: 0px;
+  }
+
+  &__li {
+    margin-bottom: 10px;
+  }
   &__link {
     color: $font;
     text-align: left;
     text-decoration: none;
     padding: 5px;
-    font-size: 17px;
+    font-size: 1.2rem;
 
     &--active {
       background-color: $CaribbeanGreen;
@@ -63,7 +75,8 @@
   flex-direction: column;
   text-align: left;
 }
-@media only screen and (min-width: $bp-sm) {
+
+@media only screen and (min-width: $bp-md) {
   .navbar {
     display: flex;
     flex-direction: row;
@@ -71,6 +84,14 @@
     width: 100%;
     padding: 15px;
     margin: 0 auto;
+    background-color: $white;
+
+
+    &__ul {
+      display: flex;
+      flex-direction: row;
+      margin-top:0px;
+    }
 
     &__button {
       display: none;

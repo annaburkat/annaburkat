@@ -4,55 +4,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Prompt:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/stop/stop.json">
-  <script type="text/javascript" src="js/script.js"></script>
-  <link rel="stylesheet" href="./font-awesome-animation.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/vendors/font-awesome-animation.min.css">
   <title>You are what you eat</title>
 </head>
 
 <body>
+  <div id="header">
+  </div>
 
-  <navbar>
-    <div class="js-navbar navbar">
-      <div class="navbar__header">
-        <a href="/" class="navbar__logo">LOGO</a>
-        <span href="javascript:void(0);" class="navbar__button" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </span>
-      </div>
-
-      <div class="navbar__list">
-        <a href="index.html" class="navbar__link">Home</a>
-        <a href="lifestyle.html" class="navbar__link">Lifestyle</a>
-        <a href="recipes.html" class="navbar__link">Recipes</a>
-        <a href="calculator.html" class="navbar__link">Calculator</a>
-        <a href="about.html" class="navbar__link">About</a>
-        <a href="contact.html" class="navbar__link">Contact</a>
-      </div>
-    </div>
-  </navbar>
-
-  <section class="homeSection homeSection--first hero">
+  <section class="homeSection homeSection--first homeHero hero">
     <div class="container">
       <div class="row hero__main-row">
         <div class="hero__wrapper">
           <div class="col-12">
             <div class="hero__left">
               <h1 class="hero__title">You are what you eat!</h1>
-              <button class="hero__button">
-                Get some food <i class="hero__button-icon fas fa-hamburger faa-burst animated-hover"></i>
-              </button>
+              <a class="homeHero__button" href="/about.html">
+                Get some food <i class="homeHero__button-icon fas fa-hamburger faa-burst animated-hover"></i>
+              </a>
             </div>
           </div>
           <div class="col-12">
-            <div class="hero__right">
-              <div class="hero__img-wrapper">
-                <img class="hero__img" src="images/breakfast_full.jpg" alt="sandwich">
+            <div class="homeHero__right">
+              <div class="homeHero__img-wrapper">
+                <img class="homeHero__img" src="/images/breakfast_full.jpg" alt="sandwich">
               </div>
             </div>
           </div>
@@ -64,23 +43,13 @@
   <section class="intro homeSection homeSection--second">
     <div class="container">
       <div class="row ">
-        <div class="col-12 col-3-lg">
-          <div class="intro__image-wrapper">
-            <img class="intro__image js-intro__image" src="images/shake.jpg" alt="">
-            <div class="intro__image-text-wrapper">
-              <h5 class="intro__image-text">Healthy food can be fun!</h5>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-12 col-9-lg">
+        <div class="col-12 col-9-xl intro__offset">
           <div class="intro__block">
             <h1 class="intro__title">You can do better</h1>
             <p class="intro__text">
-              Healthy food, diets, calories restriction - we kept thinking we were finding answers. But really, we were participating in this mass marketing of disordered eating. Lorem Ipsum dolores.
+              Healthy food, diets, calories restriction - we kept thinking we were finding answers. But really, we were participating in this mass marketing of disordered eating. Check out delicious recipies and fuel your body with healthy food!
             </p>
           </div>
-
           <div class="intro__diets">
             <div class="row">
               <a href="#" class="intro__link">
@@ -137,6 +106,12 @@
         </div>
       </div>
     </div>
+    <div class="sliderImg">
+        <img class="sliderImg__image js-intro__image" src="images/shake.jpg" alt="">
+        <div class="sliderImg__wrapperText">
+          <h5 class="sliderImg__text">Healthy food can be fun!</h5>
+        </div>
+    </div>
   </section>
 
   <section class="homeSection homeSection--third three-block">
@@ -178,41 +153,12 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="row">
-        <div class="col-12 col-3-md">
-          <a href="#home" class="footer__logo">LOGO</a>
-        </div>
-        <div class="col-12 col-3-md">
-          <div class="footer__list">
-            <a href="recipes.html" class="footer__link">Recipes</a>
-            <a href="lifestyle.html" class="footer__link">Lifestyle</a>
-            <a href="calculator.html" class="footer__link">Calculator</a>
-          </div>
-        </div>
-        <div class="col-12 col-3-md">
-          <div class="footer__list">
-            <a href="about.html" class="footer__link">About</a>
-            <a href="contact.html" class="footer__link">Contact</a>
-          </div>
-        </div>
-        <div class="col-12 col-3-md">
-          <div class="footer__contact-wrapper">
-          <div class="footer__social-media">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-pinterest-p"></i>
-          </div>
-          <div class="footer__contact">
-            <p>5 Fitzgerald Street, Harold's Cross,</p>
-            <p>Dublin 6, D08X65 </p>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <div id="footer">
+  </div>
+
+  <script src="js/vendors/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

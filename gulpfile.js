@@ -11,6 +11,26 @@ function style() {
     .pipe(browserSync.stream());
 }
 
+function vendorsJS() {
+  return gulp.src(
+    [
+      'node_modules/jquery/dist/jquery.min.js'
+    ]
+  )
+  .pipe(gulp.dest('src/js/vendors'))
+  .pipe(browserSync.stream());
+}
+
+function vendorsCSS() {
+  return gulp.src(
+    [
+      'node_modules/font-awesome/css/font-awesome.css'
+    ]
+  )
+  .pipe(gulp.dest('src/css/vendors'))
+  .pipe(browserSync.stream());
+}
+
 function watch() {
     browserSync.init({
         server: {
@@ -23,5 +43,7 @@ function watch() {
     gulp.watch('src/js/**/*.js').on('change', browserSync.reload);
 }
 
+exports.vendorCSS = vendorsCSS;
+exports.scripts = vendorsJS;
 exports.style = style;
 exports.watch = watch;

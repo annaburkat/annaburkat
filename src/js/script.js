@@ -1,3 +1,8 @@
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+
 // Anna homepage
 const myFunction = () => {
   $('.navbar').toggleClass("responsive");
