@@ -1,11 +1,13 @@
 @import '../base/colours';
 @import '../layout/grid';
 
-
 .receSection{
     padding: 150px 0;
 }
 
+.stepSection{
+    margin-bottom: 100px;
+}
 .steps__container{
     background-color: white;
 }
@@ -14,13 +16,16 @@
     background-color: #bae2be;
     padding: 15px;
 }
-
+.step_cont_done{
+    background-color: #EBF1F0;
+}
 h4{
     font-size: 2em;
     margin: 0;
 }
 
-.homeHero {
+
+/*.homeHero {
   &__button {
     font-size: 1rem;
     padding: 0.8rem;
@@ -35,4 +40,16 @@ h4{
       cursor: pointer;
     }
   }
-    
+*/
+@media only screen and (min-width: 960px) {
+    .ingredientsSection{
+        position: fixed;
+        left: 10px;
+        top 200px;
+    }
+
+
+
+
+}
+

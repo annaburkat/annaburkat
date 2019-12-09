@@ -67,18 +67,23 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#changeColor5').click(function(){
         $('#step5').toggleClass("step_cont_done");
+        $('#stepbar5').toggleClass("stepbar__step__done");
     });  
     $('#changeColor4').click(function(){
         $('#step4').toggleClass("step_cont_done");
+        $('#stepbar4').toggleClass("stepbar__step__done");
     }); 
     $('#changeColor3').click(function(){
         $('#step3').toggleClass("step_cont_done");
+        $('#stepbar3').toggleClass("stepbar__step__done");
     });  
     $('#changeColor2').click(function(){
         $('#step2').toggleClass("step_cont_done");
+        $('#stepbar2').toggleClass("stepbar__step__done");
     });
     $('#changeColor1').click(function(){
         $('#step1').toggleClass("step_cont_done");
+        $('#stepbar1').toggleClass("stepbar__step__done");
         
     });
 });    
@@ -109,3 +114,47 @@ function FbuttonDone1() {
   valor?uno.innerText = "Still trying":uno.innerText = "Done!";
   valor=!valor
 }
+
+/* -------  stepbar -----------*/
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 0) {
+    $('#stepbar').fadeIn();
+  } else {
+    $('#stepbar').fadeOut();
+  }
+});
+
+/*
+$('.steps__container').each(function () {
+    var y = $(document).scrollTop();
+    var t = $(this).parent().offset().top;
+    if (y > t) {
+        $('#stepbar').fadeIn();
+    } else {
+        $('#stepbar').fadeOut();
+    }
+});*/
+
+/* ------- ingredients ------- */
+
+$('#steps').each(function () {
+    var y = $(document).scrollTop();
+    var t = $(this).parent().offset().top;
+    if (y > t) {
+        $('.ingredientsSection').fadeIn();
+    } else {
+        $('.ingredientsSection').fadeOut();
+    }
+});
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.ingredientsSection').fadeIn();
+  } else {
+    $('.ingredientsSection').fadeOut();
+    $('.ingredientsSection').style.display = "none";
+  }
+});
