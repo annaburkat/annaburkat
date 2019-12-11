@@ -2972,6 +2972,15 @@ h6 {
   .blog__text--green {
     color: #9562b6; }
 
+.lifestyle__box {
+  min-height: 650px !important;
+  margin-bottom: 30px !important; }
+
+.lifestyle img {
+  max-width: 80%;
+  margin: 0 auto;
+  display: block; }
+
 @media only screen and (min-width: 540px) {
   .hero__title {
     max-width: 60%; }

@@ -16,6 +16,18 @@
     }
 }
 
+.lifestyle {
+  &__box {
+    min-height: 650px!important;
+    margin-bottom: 30px!important;
+  }
+  img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 @media only screen and (min-width: $bp-sm) {
     .hero {
       &__title {
