@@ -564,30 +564,24 @@ body {
 /* ---------- | go back button | ----------  */
 .go_up {
   display: inline-block;
-  width: 25px;
-  height: 25px;
-  padding: 20px;
-  background: #f9b4ec;
-  font-size: 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  width: 100px;
+  padding: 0.8rem;
+  background: #0EC99D;
   color: #fff;
   cursor: pointer;
+  border: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  border: 0 solid white;
-  border-radius: 5px;
   z-index: 999; }
   .go_up:before {
-    font-size: 1.5em;
-    line-height: 25px;
     position: absolute;
-    border-color: inherit;
     transition: transform 0.5s ease-in;
     margin-left: 5px; }
   .go_up:hover {
-    background-color: #fac4f0; }
-    .go_up:hover:before {
-      transform: rotate(360deg); }
+    background-color: #9562b6; }
 
 .goIngre {
   position: fixed;
@@ -1593,6 +1587,15 @@ body {
     width: 96%; } }
 
 /* ALEX STYLES */
+.btnIngredientDeskt {
+  display: none; }
+
+.steps {
+  padding-bottom: 100px; }
+
+.stepbar {
+  display: none; }
+
 .rece {
   padding: 150px 0; }
   .rece__img {
@@ -1681,8 +1684,6 @@ body {
       .stepbar__link--first {
         color: #fff; }
   /* --- STEPS SEC --- */
-  .steps {
-    margin-bottom: 15px; }
   .ingre {
     position: static;
     width: 46%;
@@ -1698,7 +1699,6 @@ body {
   .btnIngredient {
     display: none; }
   .btnIngredientDeskt {
-    display: none;
     position: fixed;
     z-index: 9999;
     bottom: 20px;
@@ -1713,10 +1713,6 @@ body {
       color: #fff;
       border: none;
       display: block; } }
-
-@media only screen and (max-width: 959px) {
-  .btnIngredientDeskt {
-    display: none; } }
 
 .container {
   width: 90%;
@@ -1948,6 +1944,13 @@ body {
   .dietRecipes__img {
     max-width: 80%;
     margin: 20px auto 40px; }
+  .dietRecipes__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #616770; }
+    .dietRecipes__link:hover {
+      color: #9562b6; }
 
 @media only screen and (min-width: 540px) {
   .dietRecipes__img {

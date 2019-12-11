@@ -60,6 +60,18 @@
     max-width: 80%;
     margin: 20px auto 40px;
   }
+    
+  &__link{
+     text-decoration: none;
+     font-size: 1.5rem;
+     line-height: 2.5rem;
+     color: $font; 
+     
+     &:hover {
+        color: #9562b6;
+     }
+  }
+ 
 }
 
 @media only screen and (min-width: $bp-sm) {

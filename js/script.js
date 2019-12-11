@@ -114,12 +114,9 @@ $(document).ready(function() {
         $('#stepbar1').toggleClass("stepbar__step--done");
     });
 
-
-
     $('#ingreBtn').click(function(){
         $('#ingreCont').toggleClass("ingre--mobile");
      });
-
 
     $('#changeColor1').click(function(){
 		var $this = $(this);
@@ -175,79 +172,81 @@ $(document).ready(function() {
 
 });
 
-/*
-var valor = true
-
-function FbuttonDone5() {
-  var five = document.getElementById('changeColor5');
-  valor?five.innerText = "ENJOY!!":five.innerText = "Done!";
-  valor=!valor
-}
-function FbuttonDone4() {
-  var four = document.getElementById('changeColor4');
-  valor?four.innerText = "Still trying":four.innerText = "Done!";
-  valor=!valor
-}
-function FbuttonDone3() {
-  var three = document.getElementById('changeColor3');
-  valor?three.innerText = "Still trying":three.innerText = "Done!";
-  valor=!valor
-}
-/*function FbuttonDone2() {
-  var two = document.getElementById('changeColor2');
-  valor?two.innerText = "Still trying":two.innerText = "Done!";
-  valor=!valor
-}
 
 
-function FbuttonDone1() {
-  var one = document.getElementById('changeColor1');
-  valor?one.innerText = "Still trying":one.innerText = "Done!";
-  valor=!valor
-}*/
-
-/* -------  stepbar -----------*/
-
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > 790) {
-    $('#stepbar').fadeIn();
-    $('#stepbar').css({'display':'block'})
-
-  } else {
-    $('#stepbar').fadeOut();
-  }
-});
-
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > 790) {
-    $('#ingreBtnBr').fadeIn();
-    $('#ingreBtnBr').css({'display':'block'})
-
-  } else {
-    $('#ingreBtnBr').fadeOut();
-  }
-});
+/* -------  Recepie scroll  desktop <-----------*/
 
 /*$(document).scroll(function() {
-  var z = $(this).scrollTop();
-  if (z > 800) {
-    $('#ingreCont').addClass("ingre__container_fix");
-    $('#ingreCont').removeClass("ingre__container");
-  } else {
-    $('#ingreCont').addClass("ingre__container")
-    $('#ingreCont').removeClass("ingre__container_fix");
-  }
+  var y = $(this).scrollTop();
+    if ($(document).width()>960){ console.log('nono')
+          if (y > 790) {
+              // steps bar button fade in:
+            $('#stepbar').fadeIn();
+            $('#stepbar').css({'display':'block'})
+
+              // ingre desktop button fade in:
+            $('#ingreBtnBr').fadeIn();
+            $('#ingreBtnBr').css({'display':'block'})
+
+          } else {
+            $('#stepbar').fadeOut();
+            $('#ingreBtnBr').fadeOut();
+          }
+    }
+});
+*/
+/*
+$(window).scroll(function() {
+    var y = $(window).scrollTop();
+    var steps = $('#steps').offset();
+    steps = steps.top;
+    
+    if ($(document).width()>960){ 
+                                 
+          if (y >= steps - 100) {
+              // steps bar button fade in:
+            $('#stepbar').fadeIn();
+            $('#stepbar').css({'display':'block'});
+
+              // ingre desktop button fade in:
+            $('#ingreBtnBr').fadeIn();
+            $('#ingreBtnBr').css({'display':'block'});
+
+          } else {
+            $('#stepbar').fadeOut();
+            $('#ingreBtnBr').fadeOut();
+          }
+    }
+});
+*/
+$(window).scroll(function() {
+    var y = $(window).scrollTop();
+    var steps = $('#steps').offset();
+    steps = steps.top;
+    
+    if ($(document).width()>960){ 
+                                 
+          if (y >= steps - 100) {
+              // steps bar button fade in:
+            $('#stepbar').fadeIn();
+            $('#stepbar').css({'display':'block'});
+
+              // ingre desktop button fade in:
+            $('#ingreBtnBr').fadeIn();
+            $('#ingreBtnBr').css({'display':'block'});
+
+          } else {
+            $('#stepbar').fadeOut();
+            $('#ingreBtnBr').fadeOut();
+          }
+    }
 });
 
-
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > 800) {
-    $('.ingredientsSection').fadeIn();
-  } else {
-    //$('.ingredientsSection').fadeOut();
-    $('.ingredientsSection').attr("style", "display:none");
-  }
+//Display: none for button when it`s arrive to footer:
+/* 
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+       $('#ingreBtnBr').css({'display':'none'});
+   }
 });*/
+
