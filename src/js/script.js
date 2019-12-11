@@ -64,8 +64,8 @@ function showSlides(n) {
 function initMap() {
   console.log('map');
   var location = {
-    lat: 53.3489655,
-    lng: -6.243028
+    lat: 53.3276096,
+    lng: -6.2765313
   };
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
