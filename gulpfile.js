@@ -5,9 +5,9 @@ const browserSync = require('browser-sync').create();
 
 // Compile scss into css
 function style() {
-    return gulp.src('src/scss/**/*.scss')
+    return gulp.src('scss/**/*.scss')
     .pipe(sass().on('error',sass.logError))
-    .pipe(gulp.dest('src/css'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.stream());
 }
 
@@ -17,7 +17,7 @@ function vendorsJS() {
       'node_modules/jquery/dist/jquery.min.js'
     ]
   )
-  .pipe(gulp.dest('src/js/vendors'))
+  .pipe(gulp.dest('js/vendors'))
   .pipe(browserSync.stream());
 }
 
@@ -27,20 +27,20 @@ function vendorsCSS() {
       'node_modules/font-awesome/css/font-awesome.css'
     ]
   )
-  .pipe(gulp.dest('src/css/vendors'))
+  .pipe(gulp.dest('css/vendors'))
   .pipe(browserSync.stream());
 }
 
 function watch() {
     browserSync.init({
         server: {
-            baseDir: "./src",
+            baseDir: "./",
             index: "./index.html"
         }
     });
-    gulp.watch('src/scss/**/*.scss', style);
-    gulp.watch('src/*.html').on('change',browserSync.reload);
-    gulp.watch('src/js/**/*.js').on('change', browserSync.reload);
+    gulp.watch('scss/**/*.scss', style);
+    gulp.watch('*.html').on('change',browserSync.reload);
+    gulp.watch('js/**/*.js').on('change', browserSync.reload);
 }
 
 exports.vendorCSS = vendorsCSS;
