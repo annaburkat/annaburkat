@@ -1,9 +1,11 @@
+// Anna
+//includes
 $(function(){
   $("#header").load("header.html");
   $("#footer").load("footer.html");
 });
 
-// Anna homepage
+//homepage
 const myFunction = () => {
   $('.navbar').toggleClass("responsive");
 }
@@ -22,6 +24,7 @@ setInterval(function() {
   let new_image = '/images/' + images[x];
   $('.js-intro__image').attr('src', new_image);
 }, 4000);
+
 
 
 // Carla slider

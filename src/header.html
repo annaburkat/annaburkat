@@ -1,7 +1,10 @@
 <navbar>
   <div class="js-navbar navbar">
     <div class="navbar__header">
-      <a href="/" class="navbar__logo">LOGO</a>
+      <a href="/" class="navbar__logo">
+        <img class="navbar__logo-img" src="./Images/logo.svg" alt="logo">
+        <small class="navbar__logo-text" >You are what you eat!</small>
+      </a>
       <span href="javascript:void(0);" class="navbar__button" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </span>
@@ -9,9 +12,33 @@
 
     <div class="navbar__list">
       <ul class="navbar__ul">
-        <li class="navbar__li"><a href="index.html" class="navbar__link">Home</a></li>
-        <li class="navbar__li"><a href="lifestyle.html" class="navbar__link">Lifestyle
-        </a></li>
+        <li class="navbar__li navbar__li--sub">
+          <a href="lifestyle.html" class="navbar__link navbar__link--sub">Lifestyle
+          </a>
+          <ul class="subnav">
+            <li class="navbar__li subnav__li">
+              <a href="staples.html" class="navbar__link subnav__link">Kitchen Staples</a>
+            </li>
+            <li class="navbar__li subnav__li">
+              <a href="mythsbusted.html" class="navbar__link subnav__link">Myths Busted</a>
+            </li>
+            <li class="navbar__li subnav__li">
+              <a href="leaneating.html" class="navbar__link subnav__link">Lean Eating</a>
+            </li>
+            <li class="navbar__li subnav__li">
+              <a href="beachbod.html" class="navbar__link subnav__link">Beach Bod Basics</a>
+            </li>
+            <li class="navbar__li subnav__li">
+              <a href="pillars-psychical.html" class="navbar__link subnav__link">Pillars - Psychical </a>
+            </li>
+            <li class="navbar__li subnav__li">
+              <a href="pillars-food.html" class="navbar__link subnav__link">Pillars - Food</a>
+            </li>
+            <li class="navbar__li subnav__li">
+              <a href="pillars-activity.html" class="navbar__link subnav__link">Pillars - Activity</a>
+            </li>
+          </ul>
+        </li>
         <li class="navbar__li"><a href="recipes.html" class="navbar__link">Recipes</a></li>
         <li class="navbar__li"><a href="calculator.html" class="navbar__link">Calculator</a></li>
         <li class="navbar__li"><a href="about.html" class="navbar__link">About</a></li>

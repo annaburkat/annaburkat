@@ -1,0 +1,66 @@
+@import '../base/colours';
+@import '../layout/grid';
+
+.pillars {
+  margin: 50px auto;
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    color: $PowderBlue;
+    display: inline-block;
+    padding: 10px;
+
+    &--green{
+      color: $CaribbeanGreen;
+    }
+    &--gray{
+      color: $Porcelain;
+      background-color: $font;
+      opacity: .3;
+    }
+  }
+
+  &__img {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto 50px;
+  }
+
+  &__list {
+    max-width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    counter-reset: item;
+  }
+
+  &__li {
+    counter-increment: item;
+    margin-bottom: 15px;
+
+    &::before {
+      margin-right: 10px;
+      content: counter(item);
+      background: $PowderBlue;
+      border-radius: 100%;
+      color: white;
+      width: 1.2em;
+      text-align: center;
+      display: inline-block;
+    }
+    &--green{
+      &::before{
+        background: $CaribbeanGreen;
+      }
+    }
+    &--gray{
+      &::before{
+        background: $font;
+      }
+    }
+
+  }
+}
