@@ -1,5 +1,5 @@
 .calculator {
-  padding: 150px 0;
+  margin: 100px 0;
 
   &__container {
     border-radius: 5px;
@@ -17,6 +17,6 @@
 
   &__img {
     height: 600px;
-    width: 700px;
+    max-width: 100%;
   }
 }

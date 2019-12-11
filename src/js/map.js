@@ -15,7 +15,7 @@ function initMap() {
 }
 
 
-// calculator
+//Conor calculator
 function computeBMI() {
   // inputs
   var height = Number(document.getElementById("height").value);
