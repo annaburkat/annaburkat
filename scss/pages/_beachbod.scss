@@ -2,7 +2,7 @@
 @import '../layout/grid';
 
 .beachBod-intro {
-  background-image: url("../Images/gym.jpg");
+  background-image: url("../images/gym.jpg");
   background-size: 100%;
   color: $white;
   margin-top: 50px;
@@ -10,10 +10,6 @@
 
   &__title {
     color: $white;
-  }
-
-  &__bg {
-    background-image: url('/images/gym.jpg');
   }
 
   &__text {
