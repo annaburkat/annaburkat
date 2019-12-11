@@ -1,0 +1,20 @@
+@import '../base/colours';
+@import '../layout/grid';
+
+.beachBod-intro {
+  background-image: url("../Images/gym.jpg");
+  background-size: 100%;
+  color: $white;
+  margin-top: 50px;
+  padding: 50px 0;
+
+  &__title {
+    color: $white;
+  }
+
+  &__text {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}

@@ -2,7 +2,7 @@
 @import '../layout/grid';
 
 .footer {
-  background-color: $PowderBlue;
+  background-color: $Porcelain;
   padding: 1.5rem;
   font-size: 15px;
   text-align: center;
@@ -11,6 +11,7 @@
     color: $font;
     text-decoration: none;
     display: block;
+    margin-bottom: 10px;
   }
 
   &__contact-wrapper {
@@ -33,13 +34,21 @@
       margin-bottom: 0;
     }
   }
+
+  &__logo {
+    text-decoration: none;
+  }
+
+  &__logo-img {
+    transform: rotate(40deg);
+    width: 180px;
+  }
 }
 @media only screen and (min-width: $bp-md) {
   .footer {
     text-align: left;
   }
 }
-
 @media only screen and (min-width: $bp-xl) {
   .footer {
     &__container {

@@ -1,12 +1,20 @@
 @import './base/colours';
+@import './base/general';
 @import './base/normalize';
 @import './base/typography';
-@import './base/general';
 
+@import './components/blog';
 @import './components/buttons';
+<<<<<<< HEAD:scss/styles.scss
 @import './components/hero';
 @import './components/goup';
+=======
+@import './components/form';
+@import './components/hero';
+@import './components/paragraph';
+>>>>>>> 4523653821fbb0211a69b53f42be97fdc05a03c9:src/scss/styles.scss
 @import './components/slider';
+@import './components/textBox';
 
 @import './layout/footer';
 @import './layout/forms';
@@ -14,11 +22,15 @@
 @import './layout/header';
 @import './layout/navbar';
 
-
 @import './pages/about';
+@import './pages/beachbod';
+@import './pages/calculator';
 @import './pages/contact';
 @import './pages/home';
+@import './pages/leaneating';
+@import './pages/lifestyle';
+@import './pages/mythsbusted';
+@import './pages/pillars';
 @import './pages/recipe';
 @import './pages/recipes';
-@import './pages/lifestyle';
-@import './pages/tdee';
+@import './pages/staples';

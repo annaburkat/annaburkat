@@ -1,0 +1,12 @@
+@import '../base/colours';
+@import '../layout/grid';
+
+.staples {
+  margin-top: 100px;
+
+  &__conclusion {
+    max-width: 80%;
+    text-align: center;
+    margin: 100px auto 50px;
+  }
+}

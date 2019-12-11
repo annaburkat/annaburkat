@@ -2,12 +2,13 @@
 @import '../layout/grid';
 
 .homeSection {
-  padding: 50px 0;
+  padding: 50px 0 25px;
 
   &--first {
     padding: 150px 0 50px;
     overflow-x: hidden;
   }
+
   &--third {
     padding-bottom: 100px;
   }
@@ -22,7 +23,9 @@
     color: #fff;
     border: none;
     display: block;
-    margin: 3rem 0 3rem 30%;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
 
     &:hover {
       background-color: $Misteria;
@@ -47,35 +50,60 @@
     margin-left: 33%;
   }
 }
+<<<<<<< HEAD:scss/pages/_home.scss
 @media only screen and (min-width: $bp-sm) {
   .homeHero {
     &__button {
       margin: 4rem auto;
     }
+=======
 
-    &__img-wrapper {
-      max-width: none;
-    }
+.intro {
+  &__link {
+    cursor: pointer;
+>>>>>>> 4523653821fbb0211a69b53f42be97fdc05a03c9:src/scss/pages/_home.scss
 
-    &__img {
-      max-width: none;
-      width: 80%;
-      margin-left: 35%;
+    :hover {
+      background-color: $Porcelain;
     }
   }
+
+  &__text {
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+<<<<<<< HEAD:scss/pages/_home.scss
 }
 @media only screen and (min-width: $bp-md) {
   .homeHero {
     &__button {
       margin: 6rem 0 3rem 1rem;
     }
+=======
 
-    &__img {
-      width: 70%;
-      margin-left: -15%;
-    }
+  &__diets {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__diet {
+    padding: 1rem;
+  }
+
+  &__diet-icon {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+  }
+>>>>>>> 4523653821fbb0211a69b53f42be97fdc05a03c9:src/scss/pages/_home.scss
+
+  &__diet-title {
+    text-align: center;
+    margin-top: 2rem;
   }
 }
+<<<<<<< HEAD:scss/pages/_home.scss
 @media only screen and (min-width: $bp-lg) {
   .homeHero {
     &__button {
@@ -96,16 +124,53 @@
       margin-top: -8%;
       margin-left: 35%;
     }
+=======
+
+.sliderImg {
+  margin: 50px auto 0;
+
+  &__image {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__wrapperText {}
+
+  &__text {
+    text-align: center;
+  }
+}
+
+.imagesRoll {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  &__img {
+    max-width: 25%;
+>>>>>>> 4523653821fbb0211a69b53f42be97fdc05a03c9:src/scss/pages/_home.scss
   }
 }
 
 .three-block {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
     text-align: center;
     color: $font;
   }
 
   &__box {
+    margin-bottom: 40px;
+    position: relative;
+
     &--first {
       background: linear-gradient(40deg, $PowderBlue 60%, $Porcelain 40%);
     }
@@ -117,6 +182,17 @@
     &--third {
       background: linear-gradient(38deg, $PowderBlue 60%, $Porcelain 40%);
     }
+    &--fitfirst {
+      background: linear-gradient(40deg, $CaribbeanGreenLight 60%, $Porcelain 40%);
+    }
+
+    &--fitsecond {
+      background: linear-gradient(323deg, $CaribbeanGreenLight 60%, $Porcelain 40%);
+    }
+
+    &--fitthird {
+      background: linear-gradient(38deg, $CaribbeanGreenLight 60%, $Porcelain 40%);
+    }
   }
 
   &__subtitle {
@@ -124,72 +200,51 @@
   }
 
   &__text {
-    padding: 0 15px 10px;
+    padding: 0 15px 50px;
+  }
+  &__btn {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: $font;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
   }
 }
 
-.intro {
-  &__link {
-    cursor: pointer;
+@media only screen and (min-width: $bp-sm) {
+  .homeHero {
+    &__button {
+      margin: 4rem auto;
+    }
 
-    :hover {
-      background-color: $Porcelain;
+    &__img-wrapper {
+      max-width: none;
+    }
+
+    &__img {
+      max-width: none;
+      width: 80%;
+      margin-left: 35%;
     }
   }
 
-  &__text {
-    font-size: 18px;
-    margin-bottom: 2rem;
-  }
-
-  &__diets {
-    margin: 30px auto;
+  .sliderImg {
     display: flex;
     flex-direction: row;
-  }
-
-  &__image {
-    max-width: 80%;
-    display: block;
-    margin: 1rem auto 2rem;
-  }
-
-  &__image-text {
-    text-align: center;
-  }
-
-  &__diet {
-    padding: 1rem;
-  }
-
-  &__diet-icon {
-    width: 60px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  &__diet-title {
-    text-align: center;
-    margin-top: 2rem;
-  }
-}
-@media only screen and (min-width: $bp-sm) {
-  .intro {
-    &__image-wrapper {
-      display: flex;
-      flex-direction: row;
-    }
 
     &__image {
       max-width: 40%;
     }
 
-    &__image-text-wrapper {
+    &__wrapperText {
       position: relative;
       width: 50%;
     }
 
-    &__image-text {
+    &__text {
       margin: 0;
       position: absolute;
       top: 50%;
@@ -200,62 +255,105 @@
   }
 }
 @media only screen and (min-width: $bp-md) {
-  .intro {
-    &__image-wrapper {
-      display: flex;
-      flex-direction: row;
-      flex-flow: row-reverse;
+  .homeHero {
+    &__button {
+      margin: 6rem 0 3rem 1rem;
+    }
+
+    &__img {
+      width: 70%;
+      margin-left: -15%;
+    }
+  }
+
+  .sliderImg {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+  }
+  .imagesRoll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    &__img {
+      max-width: 12.5%;
     }
   }
 }
 @media only screen and (min-width: $bp-lg) {
+  .homeHero {
+    &__button {
+      margin: 6rem 0 3rem 1rem;
+    }
+
+    &__img {
+      width: 70%;
+      margin-top: -5%;
+      margin-left: 35%;
+    }
+  }
+
+  .three-block {
+    margin-top: 20px;
+
+    &__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__box {
+      width: 30%;
+      margin-right: 3.3333333%;
+    }
+  }
+}
+@media only screen and (min-width: $bp-xl) {
+  .homeHero {
+    &__img {
+      width: 50%;
+      margin-top: -25%;
+      margin-left: 35%;
+    }
+  }
+
   .intro {
     max-width: 100%;
     margin: 0 auto;
+    position: relative;
+
+    &__offset {
+      margin-left: 24%!important;
+    }
 
     &__block {
       text-align: center;
     }
 
-    &__image-wrapper {
-      display: block;
-      margin-top: 50%;
-    }
-
     &__text {
       text-align: center;
-      max-width: 60%;
+      max-width: 80%;
       display: block;
       margin: 0 auto;
     }
+  }
 
-    &__image-text-wrapper {
-      width: 100%;
-    }
-
-    &__image-text {
-      position: relative;
-    }
-
-    &__text {
-      max-width: 80%;
-    }
+  .sliderImg {
+    max-width: 25%;
+    display: block;
+    top: 120px;
+    margin-top: 0;
+    position: absolute;
 
     &__image {
       max-width: 100%;
-      margin: 2rem 0;
-    }
-  }
-}
-@media only screen and (min-width: $bp-xl) {
-  .intro {
-    &__image-wrapper {
-      display: block;
-      margin-top: 0;
     }
 
     &__text {
-      max-width: 50%;
+      display: none;
     }
   }
 }

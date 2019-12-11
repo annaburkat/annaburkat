@@ -1,0 +1,75 @@
+@import '../layout/grid';
+
+.paragraph{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: block;
+
+    &__title {
+      text-align: center;
+      margin-bottom: 25px;
+      &--left {
+        text-align: left;
+      }
+    }
+
+    &__img{
+          border-radius: 5px;
+          max-width: 60%;
+          display: block;
+          margin: 0 auto 50px;
+    }
+    &__text  {
+      padding: 0 20px;
+      width: 100%;
+    }
+
+}
+
+
+@media only screen and (min-width: $bp-md) {
+  .paragraph{
+      margin-bottom: 100px;
+      display: block;
+
+      &__title {
+        margin-bottom: 50px;
+      }
+
+      &__img{
+            border-radius: 5px;
+            max-width: 45%;
+            &--left {
+              float: left;
+            }
+            &--right {
+              float: right;
+            }
+      }
+      &__text {
+        max-width: 50%;
+        padding: 0px;
+        &--right {
+          float: right;
+          text-align: left;
+        }
+        &--left {
+          float: left;
+          text-align: left;
+        }
+        &--fullWidth{
+          max-width: 100%;
+        }
+      }
+  }
+}
+
+@media only screen and (min-width: $bp-xl) {
+  .paragraph {
+    max-width: 70%;
+    margin: 100px auto;
+    &__img {
+      max-width: 40%;
+    }
+  }
+}

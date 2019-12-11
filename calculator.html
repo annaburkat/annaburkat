@@ -1,0 +1,60 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/stop/stop.json">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/vendors/font-awesome-animation.min.css">
+  <title>Calculator | You are what you eat</title>
+</head>
+
+<body>
+  <div id="header">
+  </div>
+  <br><br><br><br>
+
+  <section class="calculator">
+    <div class="calculator__container container">
+      <div class="row">
+        <div class="col col-6-md">
+          <div class="calculator__text form">
+            <h1>Body Mass Index Calculator</h1>
+            <p>Enter your height:
+              <input class="form__input" type="text" id="height" />
+              <select type="multiple" id="heightunits">
+                <option value="centimeters" selected="selected">Centimeters</option>
+                <option value="inches">Inches</option>
+              </select>
+            </p>
+            <p>Enter your weight:
+              <input class="form__input" type="text" id="weight" />
+              <select type="multiple" id="weightunits">
+                <option value="kg" selected="selected">Kilograms</option>
+                <option value="lb">Pounds</option>
+              </select>
+            </p>
+            <input class="form__submit" type="submit" value="GetBMI" onclick="computeBMI();">
+            <h1>Your BMI is: <span id="output">...</span></h1>
+            <h2>This means you are: <span id="remark">...</span> </h2>
+            <p>**NOTE: BMI calculations are only accurate if you haven't actively put on muscle mass through bodybuilding or other intesive physical activites</p>
+          </div>
+        </div>
+        <div class="col col-6-md">
+          <img class="calculator__img" src="images/scales.jpg" alt="weighing scales">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div id="footer">
+    </div>
+
+    <script src="js/vendors/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

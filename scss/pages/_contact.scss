@@ -1,0 +1,45 @@
+@import '../base/colours';
+@import '../layout/grid';
+
+.contact {
+  margin: 100px auto;
+  &__container {
+    border-radius: 5px;
+    background-color: $Porcelain;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  &__map {
+    height: 500px;
+    width: 90%;
+    margin: 100px auto;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__social {
+    text-align: center;
+    a {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: $bp-md) {
+  .contact {
+    max-width: 90%;
+    &__details {
+      flex-direction: row;
+    }
+  }
+}
+
+@media only screen and (min-width: $bp-lg) {
+  .contact {
+    max-width: 80%;
+  }
+}

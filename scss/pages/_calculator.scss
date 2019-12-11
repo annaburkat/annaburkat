@@ -1,0 +1,22 @@
+.calculator {
+  margin: 100px 0;
+
+  &__container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    text-align: left;
+  }
+
+  &__img {
+    height: 600px;
+    max-width: 100%;
+  }
+}
