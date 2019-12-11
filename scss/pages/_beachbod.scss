@@ -12,6 +12,10 @@
     color: $white;
   }
 
+  &__bg {
+    background-image: url('/images/gym.jpg');
+  }
+
   &__text {
     text-align: center;
     max-width: 80%;
