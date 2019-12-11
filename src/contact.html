@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/styles.css">
-  
-  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>You are what you eat</title>
+
 </head>
 
 <body>
-
   <navbar>
     <div class="js-navbar navbar">
       <div class="navbar__header">
@@ -25,41 +24,61 @@
         <a href="index.html" class="navbar__link">Home</a>
         <a href="#recipes" class="navbar__link">Recipes</a>
         <a href="#blog" class="navbar__link">Blog</a>
-        <a href="#calculator" class="navbar__link">Calculator</a>
-        <a href="#contact" class="navbar__link">Contact</a>
+        <a href="calculator.html" class="navbar__link">Calculator</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
         <a href="about.html" class="navbar__link">About</a>
         <a href="#lifestyle" class="navbar__link">Lifestyle</a>
       </div>
     </div>
   </navbar>
-  <section class="about" id="about-us">
-    <div class="container">
+  <br><br><br><br>
+
+  <section class="contact">
+    <div class="contact__container container">
       <div class="row">
         <div class="col col-6-md">
-          <div class="about__text">
-            <h1 class="about__title">Contact Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laborum eaque,
-                 numquam qui quis sequi non totam praesentium, repudiandae esse deserunt perferendis magni aperiam quas suscipit excepturi
-                  necessitatibus, ad consequatur.
-            <p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nobis in doloremque,
-                 earum possimus quae quam aspernatur? Iste perspiciatis unde hic, porro ullam corporis impedit explicabo vel minus, illum molestias.
-              </p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dolores cumque,
-                 soluta voluptatem minima fuga quidem placeat! Provident asperiores, est adipisci enim maxime fuga eveniet quis atque quibusdam eos officia!
-              </p>
+          <div class="contact__text">
+            <h1 class="contact__title">Contact Us</h1>
+            <p> If you have any questions or helpful tips please feel free to contact us by filling out the form below,
+              we will respond as soon as we can!
+            </p>
+            <form class="form" action="action_page.php">
+              <label for="fname">Full Name:</label>
+              <input class="form__input" type="text" id="fname" name="fullname" placeholder="Your full name">
+
+              <label for="email">Email:</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="Enter your email">
+
+              <label for="subject">Subject:</label>
+              <textarea class="form__textarea" id="subject" name="subject" placeholder="Ask away!" style="height:200px"></textarea>
+              
+              <input class="form__submit" type="submit" value="Submit">
+            </form>
           </div>
         </div>
         <div class="col col-6-md">
-          <div class="about__imgWrapper">
-            <img class="about__image" src="images/food.jpg" alt="A picture of different food types">
+          <div class="contact__map" id="map">
           </div>
+        </div>
+        <div class="contacts">
+            <h3>Follow us on Social Media:</h3>
+            <ul class="contacts__social">
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-pinterest"></a></li>
+            </ul>
+            <div class="address">
+              <h2>Address:</h2>
+              Mayor Street Lower,
+              International Financial Services Centre, Dublin
+            </div>
         </div>
       </div>
     </div>
   </section>
+
+
 
   <footer class="footer">
     <div class="container footer__container">
@@ -97,6 +116,11 @@
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe42PsLaFQTDrhnjMxB03nzbYTze5f8ls&callback=initMap"></script>
+
 </body>
 
 </html>

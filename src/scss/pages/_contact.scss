@@ -1,0 +1,24 @@
+.contact {
+  &__container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  &__map {
+    height: 600px;
+    width: 90%;
+    margin: 100px auto;
+  }
+}
+
+
+ul li {
+  font-size: x-large;
+}
+
+.address {
+  float: right;
+}
+
