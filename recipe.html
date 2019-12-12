@@ -11,36 +11,7 @@
   <link rel="stylesheet" href="css/vendors/font-awesome-animation.min.css">
   <title>Mushroom-Quinoa Burger | You are what you eat</title>
 </head>
-<script>
-$(document).ready(function() {
-$(window).scroll(function() {
-  var y = $(window).scrollTop();
-  var steps = $('#steps').offset();
-  steps = steps.top;
 
-  if ($(document).width() > 960) {
-
-    if (y >= steps - 100) {
-      // steps bar button fade in:
-      $('#stepbar').fadeIn();
-      $('#stepbar').css({
-        'display': 'block'
-      });
-
-      // ingre desktop button fade in:
-      $('#ingreBtnBr').fadeIn();
-      $('#ingreBtnBr').css({
-        'display': 'block'
-      });
-
-    } else {
-      $('#stepbar').fadeOut();
-      $('#ingreBtnBr').fadeOut();
-    }
-  }
-});
-});
-</script>
 <body>
   <div id="header">
   </div>
@@ -185,6 +156,7 @@ $(window).scroll(function() {
   <script src="js/vendors/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/recipe.js"></script>
 </body>
 
 </html>
