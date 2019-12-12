@@ -1,4 +1,4 @@
-// Anna includes
+// Anna includes header and footer
 $(function() {
   $("#header").load("header.html");
   $("#footer").load("footer.html");
@@ -25,7 +25,6 @@ function initMap() {
 const myFunction = () => {
   $('.navbar').toggleClass("responsive");
 }
-
 
 // Anna navigation
 $(function() {
