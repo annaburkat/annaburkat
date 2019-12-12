@@ -9,7 +9,6 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("js-mythbusted-slide");
-  console.log(slides);
   var dots = document.getElementsByClassName("js-mythbusted__dot");
   if (n > slides.length) {
     slideIndex = 1
