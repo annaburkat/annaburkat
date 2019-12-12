@@ -47,38 +47,6 @@ setInterval(function() {
 }, 4000);
 
 
-// // Carla slider
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("js-mythbusted-slide");
-  var dots = document.getElementsByClassName("js-mythbusted__dot");
-  if (n > slides.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = slides.length
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" mythbusted-slider__dot--active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " mythbusted-slider__dot--active";
-}
-
 
 //Conor calculator
 function computeBMI() {
@@ -256,30 +224,3 @@ $('#changeColor5').click(function() {
     $this.text('Done!');
   }
 })
-
-$(window).scroll(function() {
-  var y = $(window).scrollTop();
-  var steps = $('#steps').offset();
-  steps = steps.top;
-
-  if ($(document).width() > 960) {
-
-    if (y >= steps - 100) {
-      // steps bar button fade in:
-      $('#stepbar').fadeIn();
-      $('#stepbar').css({
-        'display': 'block'
-      });
-
-      // ingre desktop button fade in:
-      $('#ingreBtnBr').fadeIn();
-      $('#ingreBtnBr').css({
-        'display': 'block'
-      });
-
-    } else {
-      $('#stepbar').fadeOut();
-      $('#ingreBtnBr').fadeOut();
-    }
-  }
-});
