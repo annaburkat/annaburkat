@@ -1,0 +1,121 @@
+@import '../base/colours';
+@import '../layout/grid';
+
+
+//styles for each section on Recipes page
+.recipesSection {
+  padding: 50px 0;
+  overflow-x: hidden;
+  &:first-of-type{
+    margin-top: 50px;
+  }
+  &:last-of-type{
+    margin-bottom: 50px;
+  }
+}
+
+//Top section with list of all diets
+.dietType {
+  margin-bottom: 50px;
+
+  &__animation {
+    overflow:hidden;
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+
+    &:hover {
+      -webkit-transform:scale(1.15);
+      -moz-transform:scale(1.15);
+      -ms-transform:scale(1.15);
+      -o-transform:scale(1.15);
+      transform:scale(1.15);
+    }
+  }
+  &__img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__link{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: $font;
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+  }
+}
+
+//Sections with recipes by diet
+.dietRecipes{
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  &__img {
+    max-width: 80%;
+    margin: 20px auto 40px;
+  }
+
+  &__link{
+     text-decoration: none;
+     font-size: 1.5rem;
+     line-height: 2.5rem;
+     color: $font;
+
+     &:hover {
+        color: #9562b6;
+     }
+  }
+
+}
+
+@media only screen and (min-width: $bp-sm) {
+  //Sections with recipes by diet
+  .dietRecipes{
+    &__img {
+      max-width: 60%;
+    }
+  }
+}
+
+@media only screen and (min-width: $bp-md) {
+  //Sections with recipes by diet
+  .dietRecipes{
+    max-width: 80%;
+    flex-direction: row;
+    &--imgLeft {
+      flex-direction: row-reverse;
+    }
+    &__img {
+      width: 45%;
+      max-width: none;
+    }
+    &__list {
+      width: 45%;
+    }
+  }
+}
+
+@media only screen and (min-width: $bp-lg) {
+  //Top section with list of all diets
+  .dietType{
+    &__img{
+      max-width: 60%;
+    }
+  }
+}
+
+@media only screen and (min-width: $bp-xl) {
+  //styles for each section on Recipes page
+  .recipesSection{
+    &--smaller{
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

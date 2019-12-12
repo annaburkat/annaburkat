@@ -3686,6 +3686,580 @@ h6 {
   .col-12-xl {
     width: 96%; } }
 
+/* ALEX STYLES */
+.btnIngredientDeskt {
+  display: none; }
+
+.steps {
+  padding-bottom: 100px; }
+
+.stepbar {
+  display: none; }
+
+.rece {
+  padding: 150px 0; }
+  .rece__img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto; }
+
+.step {
+  background-color: #ebf1f0;
+  padding: 15px; }
+  .step__done {
+    background-color: #0EC99D; }
+  .step__title {
+    font-size: 1.5em;
+    margin: 0; }
+
+/* ---- ingerdients ------*/
+.btnIngredient {
+  position: fixed;
+  z-index: 9997;
+  bottom: 0;
+  width: 100%; }
+  .btnIngredient__button {
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1rem;
+    height: 50px;
+    padding: 0.8rem;
+    background-color: #0EC99D;
+    color: #fff;
+    border: none;
+    display: block; }
+
+.ingre {
+  position: fixed;
+  z-index: 9996;
+  bottom: -500px;
+  left: 0;
+  background-color: white;
+  width: 100%; }
+  .ingre--mobile {
+    position: fixed;
+    z-index: 9996;
+    bottom: 50px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 0 !important; }
+  .ingre__title--mobile {
+    font-size: 1.5em; }
+
+@media only screen and (min-width: 960px) {
+  .rece__title {
+    max-width: 80%; }
+  /* ----- STEP BAR ---- */
+  .stepbar {
+    position: fixed;
+    z-index: 9998;
+    top: 95.5px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: none; }
+    .stepbar__position {
+      display: flex;
+      justify-content: space-between;
+      align-content: center; }
+    .stepbar__step {
+      background-color: white;
+      width: 100%;
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .stepbar__step--done {
+        background-color: #0EC99D; }
+      .stepbar__step--first {
+        background-color: #0EC99D; }
+    .stepbar__link {
+      text-decoration: none;
+      color: #616770;
+      margin: auto;
+      line-height: 50px;
+      display: block;
+      text-align: center; }
+      .stepbar__link--first {
+        color: #fff; }
+  /* --- STEPS SEC --- */
+  .ingre {
+    position: static;
+    width: 46%;
+    background-color: #ebf1f0; }
+    .ingre__title {
+      font-size: 4.5rem;
+      text-align: left;
+      padding: 0 1rem;
+      color: #616770;
+      font-weight: bold;
+      max-width: 80%; }
+  /* --- INGREDIENTS SEC--- */
+  .btnIngredient {
+    display: none; }
+  .btnIngredientDeskt {
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    right: 200px; }
+    .btnIngredientDeskt__button {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1rem;
+      padding: 0.8rem;
+      background-color: #0EC99D;
+      color: #fff;
+      border: none;
+      display: block; } }
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 540px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 769px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 960px) {
+    .container {
+      width: 85%; } }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 80%; } }
+
+.row {
+  position: relative;
+  width: 100%; }
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 1%;
+  min-height: 0.125rem;
+  padding: 0 1%; }
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col {
+  width: 96%; }
+
+.col-1 {
+  width: 4.33333%; }
+
+.col-2 {
+  width: 12.66667%; }
+
+.col-3 {
+  width: 21%; }
+
+.col-4 {
+  width: 29.33333%; }
+
+.col-5 {
+  width: 37.66667%; }
+
+.col-6 {
+  width: 46%; }
+
+.col-7 {
+  width: 54.33333%; }
+
+.col-8 {
+  width: 62.66667%; }
+
+.col-9 {
+  width: 71%; }
+
+.col-10 {
+  width: 79.33333%; }
+
+.col-11 {
+  width: 87.33333%; }
+
+.col-12 {
+  width: 96%; }
+
+@media only screen and (min-width: 540px) {
+  .col-sm {
+    width: 96%; }
+  .col-1-sm {
+    width: 4.33333%; }
+  .col-2-sm {
+    width: 12.66667%; }
+  .col-3-sm {
+    width: 21%; }
+  .col-4-sm {
+    width: 29.33333%; }
+  .col-5-sm {
+    width: 37.66667%; }
+  .col-6-sm {
+    width: 46%; }
+  .col-7-sm {
+    width: 54.33333%; }
+  .col-8-sm {
+    width: 62.66667%; }
+  .col-9-sm {
+    width: 71%; }
+  .col-10-sm {
+    width: 79.33333%; }
+  .col-11-sm {
+    width: 87.33333%; }
+  .col-12-sm {
+    width: 96%; } }
+
+@media only screen and (min-width: 769px) {
+  .col-md {
+    width: 96%; }
+  .col-1-md {
+    width: 4.33333%; }
+  .col-2-md {
+    width: 12.66667%; }
+  .col-3-md {
+    width: 21%; }
+  .col-4-md {
+    width: 29.33333%; }
+  .col-5-md {
+    width: 37.66667%; }
+  .col-6-md {
+    width: 46%; }
+  .col-7-md {
+    width: 54.33333%; }
+  .col-8-md {
+    width: 62.66667%; }
+  .col-9-md {
+    width: 71%; }
+  .col-10-md {
+    width: 79.33333%; }
+  .col-11-md {
+    width: 87.33333%; }
+  .col-12-md {
+    width: 96%; } }
+
+@media only screen and (min-width: 960px) {
+  .col-lg {
+    width: 96%; }
+  .col-1-lg {
+    width: 4.33333%; }
+  .col-2-lg {
+    width: 12.66667%; }
+  .col-3-lg {
+    width: 21%; }
+  .col-4-lg {
+    width: 29.33333%; }
+  .col-5-lg {
+    width: 37.66667%; }
+  .col-6-lg {
+    width: 46%; }
+  .col-7-lg {
+    width: 54.33333%; }
+  .col-8-lg {
+    width: 62.66667%; }
+  .col-9-lg {
+    width: 71%; }
+  .col-10-lg {
+    width: 79.33333%; }
+  .col-11-lg {
+    width: 87.33333%; }
+  .col-12-lg {
+    width: 96%; } }
+
+@media only screen and (min-width: 1200px) {
+  .col-xl {
+    width: 96%; }
+  .col-1-xl {
+    width: 4.33333%; }
+  .col-2-xl {
+    width: 12.66667%; }
+  .col-3-xl {
+    width: 21%; }
+  .col-4-xl {
+    width: 29.33333%; }
+  .col-5-xl {
+    width: 37.66667%; }
+  .col-6-xl {
+    width: 46%; }
+  .col-7-xl {
+    width: 54.33333%; }
+  .col-8-xl {
+    width: 62.66667%; }
+  .col-9-xl {
+    width: 71%; }
+  .col-10-xl {
+    width: 79.33333%; }
+  .col-11-xl {
+    width: 87.33333%; }
+  .col-12-xl {
+    width: 96%; } }
+
+.recipesSection {
+  padding: 50px 0;
+  overflow-x: hidden; }
+  .recipesSection:first-of-type {
+    margin-top: 50px; }
+  .recipesSection:last-of-type {
+    margin-bottom: 50px; }
+
+.dietType {
+  margin-bottom: 50px; }
+  .dietType__animation {
+    overflow: hidden;
+    -webkit-transition: all .9s ease;
+    /* Safari y Chrome */
+    -moz-transition: all .9s ease;
+    /* Firefox */
+    -o-transition: all .9s ease;
+    /* IE 9 */
+    -ms-transition: all .9s ease;
+    /* Opera */ }
+    .dietType__animation:hover {
+      -webkit-transform: scale(1.15);
+      -moz-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+      -o-transform: scale(1.15);
+      transform: scale(1.15); }
+  .dietType__img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto; }
+  .dietType__link {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #616770;
+    display: block;
+    text-align: center;
+    margin: 25px auto; }
+
+.dietRecipes {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px; }
+  .dietRecipes__img {
+    max-width: 80%;
+    margin: 20px auto 40px; }
+  .dietRecipes__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #616770; }
+    .dietRecipes__link:hover {
+      color: #9562b6; }
+
+@media only screen and (min-width: 540px) {
+  .dietRecipes__img {
+    max-width: 60%; } }
+
+@media only screen and (min-width: 769px) {
+  .dietRecipes {
+    max-width: 80%;
+    flex-direction: row; }
+    .dietRecipes--imgLeft {
+      flex-direction: row-reverse; }
+    .dietRecipes__img {
+      width: 45%;
+      max-width: none; }
+    .dietRecipes__list {
+      width: 45%; } }
+
+@media only screen and (min-width: 960px) {
+  .dietType__img {
+    max-width: 60%; } }
+
+@media only screen and (min-width: 1200px) {
+  .recipesSection--smaller {
+    max-width: 90%;
+    margin: 0 auto; } }
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 540px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 769px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 960px) {
+    .container {
+      width: 85%; } }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 80%; } }
+
+.row {
+  position: relative;
+  width: 100%; }
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 1%;
+  min-height: 0.125rem;
+  padding: 0 1%; }
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col {
+  width: 96%; }
+
+.col-1 {
+  width: 4.33333%; }
+
+.col-2 {
+  width: 12.66667%; }
+
+.col-3 {
+  width: 21%; }
+
+.col-4 {
+  width: 29.33333%; }
+
+.col-5 {
+  width: 37.66667%; }
+
+.col-6 {
+  width: 46%; }
+
+.col-7 {
+  width: 54.33333%; }
+
+.col-8 {
+  width: 62.66667%; }
+
+.col-9 {
+  width: 71%; }
+
+.col-10 {
+  width: 79.33333%; }
+
+.col-11 {
+  width: 87.33333%; }
+
+.col-12 {
+  width: 96%; }
+
+@media only screen and (min-width: 540px) {
+  .col-sm {
+    width: 96%; }
+  .col-1-sm {
+    width: 4.33333%; }
+  .col-2-sm {
+    width: 12.66667%; }
+  .col-3-sm {
+    width: 21%; }
+  .col-4-sm {
+    width: 29.33333%; }
+  .col-5-sm {
+    width: 37.66667%; }
+  .col-6-sm {
+    width: 46%; }
+  .col-7-sm {
+    width: 54.33333%; }
+  .col-8-sm {
+    width: 62.66667%; }
+  .col-9-sm {
+    width: 71%; }
+  .col-10-sm {
+    width: 79.33333%; }
+  .col-11-sm {
+    width: 87.33333%; }
+  .col-12-sm {
+    width: 96%; } }
+
+@media only screen and (min-width: 769px) {
+  .col-md {
+    width: 96%; }
+  .col-1-md {
+    width: 4.33333%; }
+  .col-2-md {
+    width: 12.66667%; }
+  .col-3-md {
+    width: 21%; }
+  .col-4-md {
+    width: 29.33333%; }
+  .col-5-md {
+    width: 37.66667%; }
+  .col-6-md {
+    width: 46%; }
+  .col-7-md {
+    width: 54.33333%; }
+  .col-8-md {
+    width: 62.66667%; }
+  .col-9-md {
+    width: 71%; }
+  .col-10-md {
+    width: 79.33333%; }
+  .col-11-md {
+    width: 87.33333%; }
+  .col-12-md {
+    width: 96%; } }
+
+@media only screen and (min-width: 960px) {
+  .col-lg {
+    width: 96%; }
+  .col-1-lg {
+    width: 4.33333%; }
+  .col-2-lg {
+    width: 12.66667%; }
+  .col-3-lg {
+    width: 21%; }
+  .col-4-lg {
+    width: 29.33333%; }
+  .col-5-lg {
+    width: 37.66667%; }
+  .col-6-lg {
+    width: 46%; }
+  .col-7-lg {
+    width: 54.33333%; }
+  .col-8-lg {
+    width: 62.66667%; }
+  .col-9-lg {
+    width: 71%; }
+  .col-10-lg {
+    width: 79.33333%; }
+  .col-11-lg {
+    width: 87.33333%; }
+  .col-12-lg {
+    width: 96%; } }
+
+@media only screen and (min-width: 1200px) {
+  .col-xl {
+    width: 96%; }
+  .col-1-xl {
+    width: 4.33333%; }
+  .col-2-xl {
+    width: 12.66667%; }
+  .col-3-xl {
+    width: 21%; }
+  .col-4-xl {
+    width: 29.33333%; }
+  .col-5-xl {
+    width: 37.66667%; }
+  .col-6-xl {
+    width: 46%; }
+  .col-7-xl {
+    width: 54.33333%; }
+  .col-8-xl {
+    width: 62.66667%; }
+  .col-9-xl {
+    width: 71%; }
+  .col-10-xl {
+    width: 79.33333%; }
+  .col-11-xl {
+    width: 87.33333%; }
+  .col-12-xl {
+    width: 96%; } }
+
 .staples {
   margin-top: 100px; }
   .staples__conclusion {

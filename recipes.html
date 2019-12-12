@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/f45d831e1a.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/stop/stop.json">
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="./font-awesome-animation.min.css">
+  <title>Recipes</title>
+</head>
+
+<body>
+
+  <navbar>
+    <div class="js-navbar navbar">
+      <div class="navbar__header">
+        <a href="#home" class="navbar__logo">LOGO</a>
+        <span href="javascript:void(0);" class="navbar__button" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </span>
+      </div>
+      <div class="navbar__list">
+        <a href="#recipes" class="navbar__link">Recipes</a>
+        <a href="#blog" class="navbar__link">Blog</a>
+        <a href="#calculator" class="navbar__link">Calculator</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#lifestyle" class="navbar__link">Lifestyle</a>
+      </div>
+    </div>
+  </navbar>
+  <br><br><br><br>
+ <!-- <span class="go_up"></span> -->
+    <button type="button" class="go_up">Go up</button>
+
+  <section class="recipesSection hero">
+    <div class="container">
+      <div class="hero__wrapper">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="hero__title">Recipes</h2>
+          </div>
+        </div>
+        <div class="row" id="recepies_up">
+          <div class="col-12 col-4-md">
+            <div class="dietType">
+              <div class="dietType__animation">
+                <a href="#vegetarianRece">
+                  <img class="dietType__img" src="Images/recepies/cate_veget_op.jpg">
+                </a>
+              </div>
+              <a class="dietType__link" href="#vegetarianRece">Vegetarian</a>
+            </div>
+          </div>
+          <div class="col-12 col-4-md">
+            <div class="dietType">
+              <div class="dietType__animation">
+                <a href="#veganRece">
+                  <img class="dietType__img" src="Images/recepies/cate_vegan_op.jpg">
+                </a>
+              </div>
+              <a class="dietType__link" href="#veganRece">Vegan</a>
+            </div>
+          </div>
+          <div class="col-12 col-4-md">
+            <div class="dietType">
+              <div class="dietType__animation">
+                <a href="#gluFreeRece">
+                  <img class="dietType__img" src="Images/recepies/cate_gluten_op.jpg">
+                </a>
+              </div>
+              <a class="dietType__link" href="#gluFreeRece">Gluten Free</a>
+            </div>
+          </div>
+          <div class="col-12 col-4-md">
+            <div class="dietType">
+              <div class="dietType__animation">
+                <a href="#paleoRece">
+                  <img class="dietType__img" src="Images/recepies/cate_paleo_op.jpg">
+                </a>
+              </div>
+              <a class="dietType__link" href="#paleoRece">Paleo</a>
+            </div>
+          </div>
+          <div class="col-12 col-4-md">
+            <div class="dietType">
+              <div class="dietType__animation">
+                <a href="#pesceRece">
+                  <img class="dietType__img" src="Images/recepies/cate_pesce_op.jpg">
+                </a>
+              </div>
+              <a class="dietType__link" href="#pesceRece">Pescetarian</a>
+            </div>
+          </div>
+          <div class="col-12 col-4-md">
+            <div class="dietType">
+              <div class="dietType__animation">
+                <a href="#detoxRece">
+                  <img class="dietType__img" src="Images/recepies/cate_detox_op.gif">
+                </a>
+              </div>
+              <a class="dietType__link" href="#detoxRece">Detox</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recipesSection recipesSection--smaller hero" id="vegetarianRece">
+    <div class="container">
+      <div class="hero__wrapper">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="hero__title">Vegetarian</h3>
+          </div>
+        </div>
+        <div class="dietRecipes dietRecipes--imgLeft">
+          <img class="dietRecipes__img" src="Images/recepies/cate_veget_op.jpg">
+          <div class="dietRecipes__list">
+            <ul>
+              <li>
+                <a href="recepie.html" class="dietRecipes__link">Mushroom-Quinoa Buger</a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Crispy Baked Falafel</a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Pinto Posole</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+
+  <section class="recipesSection recipesSection--smaller hero" id="veganRece">
+    <div class="container">
+      <div class="hero__wrapper">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="hero__title">Vegan</h3>
+          </div>
+        </div>
+        <div class="dietRecipes">
+          <img class="dietRecipes__img" src="Images/recepies/cate_vegan_op.jpg">
+          <div class="dietRecipes__list">
+            <ul>
+              <li>
+                <a href="#" class="dietRecipes__link" >Tofu Pad Thai</a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Vegan Gravy</a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Rainbow Veggie Kabobs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recipesSection recipesSection--smaller hero" id="gluFreeRece">
+    <div class="container">
+      <div class="hero__wrapper">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="hero__title">Gluten Free</h3>
+          </div>
+        </div>
+        <div class="dietRecipes dietRecipes--imgLeft">
+          <img class="dietRecipes__img" src="Images/recepies/cate_gluten_op.jpg">
+          <div class="dietRecipes__list">
+            <ul>
+              <li>
+                <a href="#" class="dietRecipes__link" >Barbecued meatball kebabs </a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Quinoa tabbouleh </a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Lemon drizzle cake </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recipesSection recipesSection--smaller hero" id="paleoRece">
+    <div class="container">
+      <div class="hero__wrapper">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="hero__title">Paleo</h3>
+          </div>
+        </div>
+        <div class="dietRecipes">
+          <img class="dietRecipes__img" src="Images/recepies/cate_paleo_op.jpg">
+          <div class="dietRecipes__list">
+            <ul>
+              <li>
+                <a href="#" class="dietRecipes__link" >Thai squash soup </a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Easy ratatouille with poached eggs </a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Tuna steaks with cucumber relish </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recipesSection recipesSection--smaller hero" id="pesceRece">
+    <div class="container">
+      <div class="hero__wrapper">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="hero__title">Pescetarian</h3>
+          </div>
+        </div>
+        <div class="dietRecipes dietRecipes--imgLeft">
+          <img class="dietRecipes__img" src="Images/recepies/cate_pesce_op.jpg">
+          <div class="dietRecipes__list">
+            <ul>
+              <li>
+                <a href="#" class="dietRecipes__link" >Fish tacos</a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Coconut fish curry</a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Creamy courgette lasagne </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recipesSection recipesSection--smaller hero" id="detoxRece">
+    <div class="container">
+      <div class="hero__wrapper">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="hero__title">Detox</h3>
+          </div>
+        </div>
+        <div class="dietRecipes">
+          <img class="dietRecipes__img" src="Images/recepies/cate_detox_op.gif">
+          <div class="dietRecipes__list">
+            <ul>
+              <li>
+                <a href="#" class="dietRecipes__link" >Beef Bone Broth</a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Fire Cider Tonic</a>
+              </li>
+              <li>
+                <a href="#" class="dietRecipes__link" >Golden Milk Turmeric Tea</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="row">
+        <div class="col-12 col-3-md">
+          <a href="#home" class="footer__logo">LOGO</a>
+        </div>
+        <div class="col-12 col-3-md">
+          <div class="footer__list">
+            <a href="#recipes" class="footer__link">Recipes</a>
+            <a href="#blog" class="footer__link">Blog</a>
+            <a href="#calculator" class="footer__link">Calculator</a>
+          </div>
+        </div>
+        <div class="col-12 col-3-md">
+          <div class="footer__list">
+            <a href="#about" class="footer__link">About</a>
+            <a href="#lifestyle" class="footer__link">Lifestyle</a>
+            <a href="#contact" class="footer__link">Contact</a>
+          </div>
+        </div>
+        <div class="col-12 col-3-md">
+          <div class="footer__contact-wrapper">
+            <div class="footer__social-media">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-pinterest-p"></i>
+            </div>
+            <div class="footer__contact">
+              <p>5 Fitzgerald Street, Harold's Cross,</p>
+              <p>Dublin 6, D08X65 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
